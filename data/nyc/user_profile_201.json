@@ -1,0 +1,35 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee shops",
+        "bars",
+        "Mexican cuisine",
+        "social gatherings",
+        "ice cream"
+    ],
+    "routines": [
+        "morning coffee at coffee shops",
+        "dining at restaurants frequently",
+        "visiting bars in the evening",
+        "weekend outings",
+        "active lifestyle with gym visits"
+    ],
+    "user_profile": "User 201 is a socially active young adult male with a penchant for frequent coffee shop visits and a love for Mexican cuisine. He enjoys exploring a variety of dining experiences, including bars and dessert shops, indicating a preference for social settings. His check-ins reveal a structured routine featuring regular morning coffee stops, with evening outings to bars and restaurants, suggesting a vibrant social life. User 201's preferences include a variety of cuisines, notably Mexican and Caribbean, and he enjoys ice cream as a treat. He shows a high level of conscientiousness, frequently visiting his office, and maintains an active lifestyle with regular gym visits. The check-ins indicate that User 201 thrives in social environments, enjoys culinary experiences, and is open to trying new places. Patterns also show a propensity for leisure activities at parks and dessert spots. Future visits may include coffee shops (POI 592), bars (POI 3323), and Mexican restaurants (POI 981), reflecting ongoing habits.",
+    "future_POIs": [
+        592,
+        3323,
+        981
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "breakfast spots",
+        "coffee shops",
+        "food & drink shops",
+        "drugstores",
+        "department stores"
+    ],
+    "routines": [
+        "frequent breakfast outings",
+        "regular visits to coffee shops",
+        "shopping trips",
+        "use of public transportation"
+    ],
+    "user_profile": "User 10 is an active adult male who exhibits extroverted and agreeable traits. He enjoys socializing at local breakfast spots and coffee shops, often visiting these places multiple times a week. His routine reflects a conscientious approach to life, marked by regular check-ins at drugstores and department stores, indicating a focus on convenience and essential needs. User 10's emotional stability is suggested by his consistent patterns of engagement with these familiar locations. With a preference for exploration, he is open to new experiences, which is evident when he ventures to various food & drink shops and outdoor locations. User 10 is likely in his 20s or 30s, given his college-level education and middle socioeconomic status. He often utilizes public transportation, including bus and train stations, suggesting a dynamic lifestyle centered around accessibility and community interaction.",
+    "future_POIs": [
+        2009,
+        3373,
+        2393,
+        3000,
+        871
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "shopping",
+        "coffee shops",
+        "outdoor activities",
+        "movies",
+        "fashion"
+    ],
+    "routines": [
+        "frequent visits to office and home",
+        "regular shopping trips",
+        "consistent visits to coffee shops"
+    ],
+    "user_profile": "User 637 is an introverted and agreeable individual who enjoys a mix of social and alone time, making them quite adaptable in various environments. Predominantly visits homes and offices, indicating a balance between work and personal life. Shopping, particularly at clothing stores and malls, is a common routine, reflecting a keen interest in fashion and personal style. They frequently enjoy coffee shops, suggesting a taste for relaxed social interactions or solitude among comfortable surroundings. Outdoor excursions in parks and consistent movie visits showcase their openness to new experiences while maintaining emotional stability. As a college-educated adult, they belong to the middle socioeconomic class and appreciate both consumer and leisure activities. Predicted future check-ins might include outdoor adventures at places like parks, events at fashionable venues, or trendy coffee spots, potentially visiting important places such as POI IDs 4119 (Other Great Outdoors), 1864 (Movie Theater), and local event spaces promoting social gatherings.",
+    "future_POIs": [
+        {
+            "POI_id": 4119,
+            "category": "Other Great Outdoors"
+        },
+        {
+            "POI_id": 1864,
+            "category": "Movie Theater"
+        }
+    ]
+}

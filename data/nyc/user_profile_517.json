@@ -1,0 +1,35 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "closed"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "high school",
+        "middle"
+    ],
+    "preferences": [
+        "home-centric activities",
+        "seafood dining",
+        "shopping trips",
+        "social gatherings in familiar settings"
+    ],
+    "routines": [
+        "frequent visits to homes",
+        "regular seafood restaurant outings",
+        "occasional shopping trips"
+    ],
+    "user_profile": "User 517 is a calm and organized adult female who prefers the comforts of home and enjoys the occasional social gathering. With a conscientious nature, she maintains a regular routine, frequenting the same private residences and seafood restaurants, suggesting strong connections with family and friends. Her preference for familiar settings indicates an introverted personality, but she is agreeable, getting along well with others in her social circles. User 517 values stability and is likely to engage in predictable routines, visiting the same places regularly. The user has a high school education and belongs to the middle socioeconomic level, suggesting a balanced lifestyle. Notably, she has interest in Food & Drink Shops, Home (private), and Seafood Restaurants, indicating future visits are likely to include these types of locations, especially seafood restaurants like POI id 4135. This individual\u2019s profile suggests she appreciates the simple yet comforting aspects of life, reflecting a strong appreciation for the familiar.",
+    "future_likely_visits": [
+        4135,
+        2363,
+        4644,
+        4660,
+        4729,
+        4672
+    ]
+}

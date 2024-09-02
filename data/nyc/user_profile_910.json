@@ -1,0 +1,32 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee shops",
+        "bakeries",
+        "socializing in bars",
+        "hobbies",
+        "movies",
+        "Asian and Mexican cuisine",
+        "electronics"
+    ],
+    "routines": [
+        "visiting coffee shops in the morning",
+        "attending the bar in the evenings",
+        "frequent bakery visits",
+        "watching movies",
+        "shopping for electronics and hobbies"
+    ],
+    "user_profile": "User 910 is a 20-something female, likely in her early adult years, and has a middle socioeconomic status. She is sociable and enjoys meeting friends at coffee shops and bars, indicating an extroverted personality with an agreeable nature. With frequent visits to coffee shops, bakeries, and themed restaurants, she seems to enjoy flavorful experiences and social dining, particularly Vietnamese and Mexican cuisine. Her routine incorporates regular interactions at local spots, suggesting a conscientious approach to balancing leisure and social life. User 910 enjoys hobbies and often visits electronics stores, showcasing her openness to engaging in new experiences and interests. She shows emotional stability, comfortably transitioning between various venues, from casual coffee shops to lively bars. Given her patterns, important future visit recommendations might include local cafes (POI 191), art supply stores (POI 802), and independent cinemas (POI 220)."
+}

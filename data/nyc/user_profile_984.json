@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "socializing",
+        "going to movies",
+        "enjoying food",
+        "visiting parks",
+        "attending academic events"
+    ],
+    "routines": [
+        "attending college regularly",
+        "exploring various dining options",
+        "spending time in parks and plazas",
+        "engaging with entertainment venues",
+        "visiting gyms for fitness"
+    ],
+    "user_profile": "User 984 is a socially active male in his late 20s, currently pursuing a college education. He frequents various places, including college academic buildings, movie theaters, and food venues like BBQ joints and wings places, indicating a love for social gatherings centered around food and film. User 984 values new experiences and enjoys visiting entertainment venues, enhancing his active lifestyle. His routine shows a mix of academic commitments and leisure activities, such as visiting parks and gyms, indicating a balanced approach to life. He seems enthusiastic about engaging with peers and exploring diverse environments. User 984 would likely continue visiting academic institutions (POI id 2886), movie theaters (POI id 476), and social venues such as bars and restaurants in the future."
+}

@@ -1,0 +1,28 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "enjoys Cajun and Creole cuisine",
+        "frequently visits parks",
+        "often stops by bakeries",
+        "likes exploring neighborhoods"
+    ],
+    "routines": [
+        "regular park visits, particularly on weekends",
+        "occasional dining out at Cajun/Creole restaurants",
+        "routine trips to local bakeries",
+        "frequent visits to buildings for work or study"
+    ],
+    "user_profile": "User 236 is an adult female with a preference for exploring local culinary experiences, especially Cajun and Creole cuisine, as evidenced by frequent visits to related restaurants. She enjoys spending time outdoors, regularly visiting local parks, suggesting a love for nature and relaxation. Following a structured routine, she often incorporates visits to bakeries into her week, enjoying fresh pastries. User 236 seems to appreciate a balance of social and solitary activities, leaning toward introversion but willingly engaging in social outings. She exhibits high conscientiousness through regular and repeated visits to buildings, indicating stability in her daily routines. Her openness to experience is reflected in her explorations of different neighborhoods, fostering community connections while staying emotionally stable. Predicted future visits may include continued explorations of parks (POI id 4256), frequenting local bakeries (POI id 2173), popular Cajun restaurants (POI id 260), and other neighborhood amenities (POI id 1913)."
+}

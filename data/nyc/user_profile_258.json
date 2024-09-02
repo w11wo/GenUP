@@ -1,0 +1,31 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "fitness",
+        "socializing",
+        "BBQ food",
+        "movies",
+        "Italian cuisine",
+        "American cuisine",
+        "bars"
+    ],
+    "routines": [
+        "regular gym workouts",
+        "frequent dining out",
+        "multiple movie outings",
+        "socializing at bars"
+    ],
+    "user_profile": "User 258 is a socially active adult male with a penchant for fitness and dining. His frequent visits to the gym suggest he values health and wellness, while his consistent attendance at BBQ joints, American, and Italian restaurants indicates a love for diverse cuisine. He enjoys the cinema, visiting movie theaters regularly, which suggests he appreciates entertainment and social outings. User 258 seems to foster relationships, often opting for lively environments such as bars, indicating an extroverted personality. His activities reflect high conscientiousness through regular gym visits and planning for social engagements. He appears emotionally stable, comfortable in social settings and open to new experiences. The probability of visiting the local popular gym (POI id 1453) or trying out a new restaurant (POI id 120 or 3694) in the future is high, as these align with his established habits and preferences."
+}

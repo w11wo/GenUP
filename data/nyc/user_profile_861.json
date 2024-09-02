@@ -1,0 +1,34 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "outdoor activities",
+        "spending time in neighborhoods",
+        "frequenting universities and academic buildings",
+        "visiting food and drink shops"
+    ],
+    "routines": [
+        "regularly visits the university and college buildings for study",
+        "enjoys outdoor activities frequently",
+        "travels to neighborhoods often for leisure and socializing"
+    ],
+    "user_profile": "User 861 is a socially active male in his early twenties, demonstrating a proclivity for outdoor activities, and frequent engagement with academic institutions. With strong conscientiousness, he thrives in study environments, often visiting universities and college academic buildings. The user enjoys exploring nearby neighborhoods, suggesting an inclination toward community interactions. His preference for the outdoors indicates a lifestyle that balances academic pursuits with recreation, ultimately fostering a sense of harmony. Balancing firmly between emotional stability and openness, he approaches new experiences and social situations with enthusiasm, reflecting a robust personality that values relationships and personal growth.",
+    "important_places": [
+        3155,
+        3715,
+        3039,
+        3181,
+        3554
+    ]
+}

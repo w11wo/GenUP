@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "dining out",
+        "shopping",
+        "socializing",
+        "academic activities",
+        "fitness"
+    ],
+    "routines": [
+        "attending university regularly",
+        "visiting diners and restaurants several times a week",
+        "engaging in fitness activities",
+        "shopping and exploring local stores",
+        "visiting parks and leisure spots"
+    ],
+    "user_profile": "User 183 is a sociable adult male who engages frequently in academic and leisurely activities. He is currently attending university, demonstrating a high level of conscientiousness in his educational pursuits. His extroverted nature is evident from his regular visits to diners, bars, and clothing stores, indicating a preference for social dining experiences coupled with shopping activities. He maintains a balanced routine by including visits to fitness centers, suggesting a focus on health and wellness. During his week, he enjoys exploring various cuisines, especially at restaurants such as Korean and American diners. User 183 also shows an appreciation for fashion with multiple visits to clothing stores. He is emotionally stable and maintains positive relationships with peers in his university setting, contributing to his agreeable personality. In the future, he may continue to frequent the university (POI id 1931), various diners (POI ids 1617, 1578), parks (POI id 254), and shopping venues, thereby participating in local culture and community."
+}

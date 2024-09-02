@@ -1,0 +1,35 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "socializing at bars",
+        "visiting restaurants",
+        "working in an office environment",
+        "attending sports events"
+    ],
+    "routines": [
+        "regular office visits",
+        "going to bars in the evenings",
+        "frequent dining at various eateries",
+        "visiting outdoor spaces like parks"
+    ],
+    "user_profile": "User 123 is a sociable adult male in his late 20s or early 30s who enjoys an active lifestyle filled with social interactions and dining out. He shows a strong preference for bars and restaurants, frequently visiting a local bar after work on weekdays to unwind. His routines suggest he leads a structured life, returning to the office multiple times a week along with occasional visits to parks and historic sites. User 123 likely enjoys attending sports events at stadiums, as indicated by his regular check-ins at such venues. With a college education and a middle socioeconomic standing, he balances work with an active social life, often favoring casual dining experiences. His openness to new experiences is reflected in his explorations of various food places and community areas. Going forward, key places of interest for him may include new bars or dining establishments, as well as outdoor events.",
+    "POI_ids": [
+        2251,
+        657,
+        3884,
+        2156,
+        190
+    ]
+}
