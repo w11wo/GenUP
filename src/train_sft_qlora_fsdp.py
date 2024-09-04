@@ -1,4 +1,3 @@
-import pandas as pd
 import torch
 
 from argparse import ArgumentParser
@@ -21,6 +20,7 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --warmup_steps 20 \
     --num_epochs 3 \
     --gradient_checkpointing \
+    --apply_liger_kernel_to_llama \
     --dataset_id "w11wo/FourSquare-NYC-POI"
 """
 
@@ -55,7 +55,7 @@ def main():
     if tokenizer.add_bos_token:
         tokenizer.add_bos_token = False
 
-    response_template = "[/INST]" # NOTE: for Llama2, don't include whitespace in the beginning of prefix
+    response_template = " [/INST]"
     collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
     max_seq_length = args.max_length
 
@@ -73,7 +73,6 @@ def main():
 
     model = AutoModelForCausalLM.from_pretrained(
         args.model_checkpoint,
-        use_cache=True if args.gradient_checkpointing else False,
         attn_implementation="sdpa",  # alternatively use "flash_attention_2"
         torch_dtype=torch_dtype,
         quantization_config=quantization_config,
@@ -92,9 +91,6 @@ def main():
         task_type="CAUSAL_LM",
     )
 
-    if args.gradient_checkpointing:
-        model.gradient_checkpointing_enable()
-
     args = TrainingArguments(
         output_dir=model_id,
         save_strategy="epoch",
@@ -102,8 +98,6 @@ def main():
         max_grad_norm=args.max_grad_norm,
         warmup_steps=args.warmup_steps,
         per_device_train_batch_size=args.batch_size,
-        gradient_checkpointing=args.gradient_checkpointing,
-        gradient_checkpointing_kwargs={"use_reentrant": True} if args.gradient_checkpointing else None,
         fp16=torch_dtype == torch.float16,
         bf16=torch_dtype == torch.bfloat16,
         num_train_epochs=args.num_epochs,
@@ -114,6 +108,7 @@ def main():
             "backward_prefetch": "backward_pre",
             "forward_prefetch": "false",
             "use_orig_params": "false",
+            "activation_checkpointing": "true" if args.gradient_checkpointing else "false",
         },
     )
 

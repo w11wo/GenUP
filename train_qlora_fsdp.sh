@@ -17,8 +17,8 @@ pip list
 
 cd $dir
 
-ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node=2 src/train_sft_qlora_fsdp.py \
-    --model_checkpoint "w11wo/Llama-2-7b-longlora-32k-merged" \
+HF_HUB_OFFLINE=1 ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node=2 src/train_sft_qlora_fsdp.py \
+    --model_checkpoint "Yukang/Llama-2-7b-longlora-32k-ft" \
     --max_length 16384 \
     --batch_size 1 \
     --learning_rate 2e-5 \
@@ -26,4 +26,5 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --warmup_steps 20 \
     --num_epochs 3 \
     --gradient_checkpointing \
+    --apply_liger_kernel_to_llama \
     --dataset_id "w11wo/FourSquare-NYC-POI"
