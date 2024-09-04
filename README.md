@@ -47,3 +47,11 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --apply_liger_kernel_to_llama \
     --dataset_id "w11wo/FourSquare-NYC-POI"
 ```
+
+## Next POI Evaluation
+
+```sh
+accelerate launch src/eval_next_poi.py \
+    --model_checkpoint "w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI" \
+    --dataset_id "w11wo/FourSquare-NYC-POI"
+```
