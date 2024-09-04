@@ -16,7 +16,7 @@ LLAMA_PROMPT = """<s>[INST] <<SYS>>
 
 def parse_args():
     parser = ArgumentParser()
-    parser.add_argument("--input_path", type=str, default="../LLM4POI/datasets/")
+    parser.add_argument("--input_path", type=str, default="./LLM4POI/")
     parser.add_argument("--profiles_path", type=str, default="./data")
     parser.add_argument("--dataset", type=str, required=True, default="nyc")
     parser.add_argument("--dataset_id", type=str, required=True)
@@ -61,8 +61,9 @@ def main(args):
     # convert test data to dict format
     raw_data_test = [{"question": q, "answer": a} for line in raw_data_test for (q, a) in [line.split("<answer>:")]]
 
-    # TODO: some test QA pairs are incomplete! remove incomplete QA pairs!
-    raw_data_test = [datum for datum in raw_data_test if "<question>:" in datum["question"]]
+    # NOTE: some QA pairs don't contain Q, remove incomplete pairs
+    raw_data_train = list(filter(lambda d: "<question>:" in d["question"], raw_data_train))
+    raw_data_test = list(filter(lambda d: "<question>:" in d["question"], raw_data_test))
 
     def process_qa_pair(question: str, answer: str) -> dict:
         # remove <answer> prefix

@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adolescent",
+        "female",
+        "high school",
+        "middle"
+    ],
+    "preferences": [
+        "shopping",
+        "movies",
+        "eating out",
+        "socializing",
+        "technology"
+    ],
+    "routines": [
+        "weekend mall visits",
+        "movie nights",
+        "grocery shopping",
+        "hanging out at coffee shops",
+        "school activities"
+    ],
+    "user_profile": "User 2117 is an outgoing and sociable adolescent who enjoys a vibrant lifestyle centered around shopping, entertainment, and socializing with friends. This user frequently visits malls, theaters, and grocery stores, indicating a penchant for consumer experiences and a focus on social interactions. She values relationships, often enjoying the company of peers at cafes and pubs, enhancing her socially agreeable nature. Additionally, her ongoing visits to educational institutions suggest an emphasis on learning and self-improvement. Despite typical teenage challenges, she exhibits emotional stability and conscientiousness in her activities, balancing leisure and education. Her visits to tech stores and interest in apparel highlight an openness to new experiences and trends. This profile indicates future visits to POIs such as the local mall (POI ID 5870), AMC Theatre (POI ID 5124), and Apple Store (POI ID 1908), aligning with her interests in shopping and entertainment."
+}

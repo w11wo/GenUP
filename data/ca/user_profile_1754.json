@@ -1,0 +1,35 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open to experience"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee",
+        "desserts",
+        "malls",
+        "frozen yogurt",
+        "Mexican food",
+        "South American cuisine",
+        "park visits",
+        "shopping",
+        "theater"
+    ],
+    "routines": [
+        "frequent coffee shop visits",
+        "mall outings",
+        "dining out",
+        "grocery shopping",
+        "going to the movies",
+        "spending time in parks and recreational areas"
+    ],
+    "user_profile": "User 1754 is an extroverted, agreeable, and conscientious adult female in her mid-20s with a college education. She enjoys a diverse range of activities, including frequent visits to coffee shops and malls, where she often indulges in desserts and frozen yogurt. Her dining preferences include a variety of cuisines such as Mexican and South American food. User 1754 also enjoys attending movies regularly, evidenced by multiple visits to AMC theaters. She has a penchant for social settings, as seen in her interest in parks and dancefloors. User 1754 values community interactions and often engages in grocery shopping, which indicates a level of responsibility in her routines. Key future points of interest include local malls (POI ID 5870), Starbucks (POI ID 7517), and coffee shops (POI ID 6834), as well as Mexican and frozen yogurt establishments (POI IDs 1226 and 8245, respectively)."
+}

@@ -1,0 +1,31 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee shops",
+        "shopping",
+        "social gatherings",
+        "urban experiences"
+    ],
+    "routines": [
+        "daily coffee visits",
+        "social outings",
+        "weekend shopping trips"
+    ],
+    "user_profile": "User 2793 is a socially active young adult who enjoys frequenting coffee shops, particularly Starbucks, signifying a preference for social environments and caffeine boosts during busy days. The consistency of visits to the same Starbucks suggests a strong attachment to their local community and routine. User 2793 likely enjoys engaging in casual conversations with Baristas and fellow patrons, aligning with extroverted and agreeable traits. Additionally, their visit to the mall indicates an interest in shopping and exploring new products, showcasing an openness to experience. The user\u2019s educational background reflects some level of importance placed on personal development, and the chosen locations signal a middle socioeconomic status, accessible yet upscale preferences. User 2793 embodies a balance of conscientiousness and emotional stability, likely managing their schedule efficiently while handling stress positively. This profile predicts user 2793 might enjoy returning to places like friendly coffee shops, local malls, and community events.",
+    "future_POI_ids": [
+        5085,
+        3601
+    ]
+}

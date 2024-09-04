@@ -1,0 +1,38 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "baking",
+        "healthy eating",
+        "reading",
+        "socializing",
+        "craft beer"
+    ],
+    "routines": [
+        "visiting bakeries",
+        "grocery shopping at Whole Foods",
+        "reading at bookstores",
+        "enjoying food at diners",
+        "attending brewery events"
+    ],
+    "user_profile": "User 1025 is a socially active and agreeable adult who enjoys a mix of healthy eating and indulgent treats. She frequents local bakeries, Whole Foods, and diners, indicating a penchant for both homey and health-conscious experiences. With a college education, she values the quality of her food and the ambiance of her dining environments. Regular visits to bookstores suggest she has an interest in reading, perhaps as a way to unwind after social activities. This user has demonstrated a curiosity about craft beer, as evidenced by multiple check-ins at a local brewery. Overall, User 1025 thrives in social environments and embraces new experiences, portraying traits of an extrovert who is open to trying new things while valuing meaningful interactions. Anticipated future check-ins may include other local eateries, parks for social gatherings, or more boutique breweries. Significant POIs may include local cafes and farmer's markets, complementing her lifestyle. Her patterns indicate a strong community engagement and an appreciation for varied but wholesome dining experiences.",
+    "future_POIs": [
+        42,
+        1164,
+        8587,
+        7156,
+        3660,
+        52
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "outdoor activities",
+        "skiing",
+        "socializing at resorts",
+        "visiting coffee shops",
+        "exploring cultural venues",
+        "staying in condos",
+        "enjoying diverse cuisines"
+    ],
+    "routines": [
+        "regular visits to ski areas and resorts",
+        "frequent coffee shop visits",
+        "engaging in outdoor sports",
+        "traveling by air",
+        "dining at various restaurants"
+    ],
+    "user_profile": "User 191 is an adventurous and sociable individual in their late 20s or early 30s, actively engaging in outdoor activities such as skiing and visiting resorts. They appreciate the thrill of snowboarding and enjoy spending time in lively settings like coffee shops and restaurants. With a strong educational background, they likely have a college degree and a stable career, placing them comfortably in the middle socioeconomic status. Their frequent check-ins at POIs like ski areas, resorts, and coffee shops suggest they enjoy a lifestyle enriched by both leisure and social interactions. User 191 often travels, indicating they have an adventurous spirit and an openness to experience new places. Future visits may include similar ski resorts (POI IDs: 4782, 488) and coffee shops (POI IDs: 382, 667), highlighting a pattern of enjoying familiar comforts in active settings."
+}

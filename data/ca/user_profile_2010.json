@@ -1,0 +1,45 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "health and fitness",
+        "grocery shopping",
+        "gardening",
+        "golfing",
+        "visiting zoos",
+        "sports events",
+        "air travel",
+        "bulk shopping"
+    ],
+    "routines": [
+        "exercising regularly",
+        "weekly grocery shopping",
+        "spending weekends outdoors",
+        "attending sports events",
+        "traveling frequently"
+    ],
+    "user_profile": "User 2010 is an active and sociable adult male with a college education, living a middle-class lifestyle. He enjoys maintaining a healthy lifestyle, as evidenced by frequent visits to health and fitness centers. Grocery shopping appears to be an essential part of his routine, complemented by time spent gardening, suggesting a fondness for nature and sustainability. User 2010 is adventurous, often visiting various recreational spots like golf courses and zoos, indicating his enjoyment of outdoor activities. He seems to thrive in busy settings, often traveling, as highlighted by his multiple airport visits. This user also enjoys sports, attending games at local stadiums and making the most of weekends outdoors. His openness to new experiences and emotional stability reflects in his willingness to try new activities and engage with others in diverse settings. Further visits are anticipated at community parks, fitness clubs, and even travel hotspots.",
+    "POI IDs": [
+        6294,
+        996,
+        2239,
+        8629,
+        91,
+        113,
+        1315,
+        1179,
+        625,
+        3844
+    ]
+}

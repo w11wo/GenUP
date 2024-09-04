@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "business meetings",
+        "networking events",
+        "live music",
+        "fine dining",
+        "traveling"
+    ],
+    "routines": [
+        "attending conferences",
+        "visiting corporate offices",
+        "traveling by air",
+        "enjoying social outings at breweries",
+        "attending live music events"
+    ],
+    "user_profile": "User 1322 is an outgoing adult male in his early thirties, likely holding a college degree and belonging to the middle socioeconomic class. He enjoys being social, attending corporate meetings, and networking at conferences. His check-ins indicate a routine that includes visiting corporate office environments and travel via airports, signaling a professional or business-oriented lifestyle. User 1322 is likely to frequent breweries, restaurants, and music venues, reflecting a preference for social interactions over casual outings. He seeks new experiences, shown by his visits to various venues and a willingness to explore different dining options. Given his routine, he may also plan future visits to related venues, such as additional conferences or more live music events. POI IDs of interest for future visits include the corporate offices (POI IDs 196, 1, 265, 9122), breweries (POI ID 52), and live music venues (POI ID 1026)."
+}

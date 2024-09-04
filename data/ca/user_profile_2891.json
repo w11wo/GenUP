@@ -1,0 +1,47 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adolescent",
+        "male",
+        "some schooling",
+        "middle"
+    ],
+    "preferences": [
+        "theme parks",
+        "Mexican cuisine",
+        "Asian cuisine",
+        "shopping",
+        "coffee shops"
+    ],
+    "routines": [
+        "visiting theme parks",
+        "going to malls",
+        "eating out at various restaurants",
+        "shopping for apparel",
+        "spending time at coffee shops"
+    ],
+    "user_profile": "User 2891 is an adolescent male with a middle socioeconomic background and is likely still in some phase of their education. He displays extroverted traits, enjoying social and lively environments such as theme parks and malls. His agreeable nature is evident through frequent visits to eateries, suggesting a preference for social dining experiences, particularly in diverse cuisines like Mexican and Asian. This user gravitates toward lively social experiences, often found in settings like theme parks and stadiums, and tends to seek out shopping venues and coffee shops like Starbucks for casual outings. Additionally, his conscientiousness appears in his organized schedule, potentially indicating a balanced approach to social activities and personal pursuits. The user's engagement with historical landmarks and farms suggests a sense of curiosity and openness to new experiences. Future visits to places of interest may include more theme parks (POI IDs: 2781, 6254), other Mexican and Asian restaurants (POI IDs: 2376, 1193), and continue exploring shopping destinations.",
+    "POI_IDS": [
+        2781,
+        6254,
+        2376,
+        1286,
+        79,
+        5671,
+        2304,
+        4194,
+        8197,
+        4452,
+        4736,
+        63,
+        1176,
+        8684,
+        8608
+    ]
+}

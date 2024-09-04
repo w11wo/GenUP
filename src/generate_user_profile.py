@@ -10,7 +10,7 @@ from gpt import GPT
 
 def parse_args():
     parser = ArgumentParser()
-    parser.add_argument("--input_path", type=str, default="../LLM4POI/datasets/")
+    parser.add_argument("--input_path", type=str, default="./LLM4POI/")
     parser.add_argument("--output_path", type=str, default="./data")
     parser.add_argument("--dataset", type=str, required=True, default="nyc")
     return parser.parse_args()

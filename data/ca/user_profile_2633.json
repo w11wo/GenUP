@@ -1,0 +1,40 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "fitness activities",
+        "sports events",
+        "nature exploration",
+        "social outings",
+        "ice skating",
+        "cinema"
+    ],
+    "routines": [
+        "regular gym visits",
+        "attending sports games",
+        "participating in recreational activities",
+        "spending time outdoors",
+        "visiting entertainment venues"
+    ],
+    "user_profile": "User 2633 is an active male adult in his late 20s who enjoys a diverse range of recreational activities. He frequently visits the gym, specifically 24 Hour Fitness, demonstrating a strong commitment to fitness and well-being. His check-ins at various stadiums indicate a passion for sports and attending live events. He often engages in outdoor activities like visiting nature preserves, reflecting an appreciation for nature and exploration. Ice skating appears to be one of his favorite leisure activities, with multiple visits to the rink. User 2633 enjoys socializing and is likely to participate in group outings or recreational sports with friends. His willingness to explore different venues, such as casinos and cinemas, suggests he is adventurous and open to new experiences. This user likely gravitates towards average-to-moderate socioeconomic environments and has completed some level of higher education, influencing his choice of activities and social engagement. Future points of interest include local sports events, new fitness classes, and upcoming films.",
+    "POI_ids": [
+        6477,
+        247,
+        4280,
+        4259,
+        5964,
+        728,
+        7936
+    ]
+}

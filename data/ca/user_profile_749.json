@@ -1,0 +1,41 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee shops",
+        "Mexican food",
+        "theater visits",
+        "frozen yogurt",
+        "Asian cuisine",
+        "casual dining"
+    ],
+    "routines": [
+        "regular visits to coffee shops",
+        "dining out at various cuisines",
+        "frequent theater attendance",
+        "occasional shopping",
+        "grocery shopping"
+    ],
+    "user_profile": "User 749 is a socially active adult female who enjoys a wide variety of dining experiences, particularly Mexican and Asian cuisines, alongside frequent visits to coffee shops such as Starbucks and local eateries. Her schedule includes regular visits to theaters, showcasing her appreciation for live performances and entertainment, demonstrating a balance between social engagements and personal moments in cozy settings. She showcases considerable openness to new experiences, as evidenced by her frequent exploration of different food types and venues. Additionally, her conscientiousness is reflected in her organized approach to shopping and dining, often visiting places like Trader Joe's and various grocery stores. This user exhibits a high level of agreeableness, frequently choosing group dining experiences over solo visits. Recommendations for future activities include returning to coffee shops, enjoying performances at AMC theaters, and exploring new food options, particularly at local Asian and Middle Eastern restaurants.",
+    "POI_ids": [
+        881,
+        2884,
+        7990,
+        4096,
+        1202,
+        3525,
+        1476,
+        9424
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee shops",
+        "fine dining",
+        "theme parks",
+        "zoos",
+        "casual dining"
+    ],
+    "routines": [
+        "visiting coffee shops daily",
+        "traveling regularly",
+        "attending social outings like pubs",
+        "enjoying theme park visits",
+        "going to movies"
+    ],
+    "user_profile": "User 2255 is a sociable and adventurous female in her 30s, with a college education and a middle socioeconomic status. She exhibits high extroversion, often visiting social venues such as coffee shops, pubs, and restaurants. Frequent check-ins at Disneyland Resort indicate a love for theme parks and family activities, highlighting her open and agreeable nature. Known for her taste in diverse dining, she shifts between casual chains like In-N-Out Burger and upscale restaurants. This user likely enjoys spontaneous outings, as seen in her visits to various locations, including airports, suggesting a lifestyle that includes travel. Her emotional stability and conscientiousness are clear in her consistent check-ins at familiar spots, although she embraces new experiences. Future patterns suggest she will continue exploring coffee shops and theme parks, frequenting places that foster social interactions.",
+    "important_places": [
+        2259,
+        347,
+        3771
+    ]
+}

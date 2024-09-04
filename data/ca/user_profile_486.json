@@ -1,0 +1,35 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adolescent",
+        "female",
+        "high school",
+        "middle"
+    ],
+    "preferences": [
+        "food and dining",
+        "shopping at malls",
+        "visiting beaches",
+        "cultural experiences like art and sculpture"
+    ],
+    "routines": [
+        "frequent visits to malls",
+        "regular dining out at food places like Chipotle and Asian restaurants",
+        "visiting the beach during evenings"
+    ],
+    "user_profile": "User 486 is an adventurous adolescent female who enjoys exploring a diverse range of dining options, particularly favoring Asian cuisine and fast casual food like Chipotle. She frequents shopping malls, which suggests a penchant for retail and being in social environments. Her routine includes visiting the beach on warmer days, indicating she appreciates outdoor activities. User 486 has a vibrant personality, exhibiting extroverted traits through her regular social outings and agreeable nature, making her easy to get along with. Her conscientiousness is reflected in her structured approach to visiting places like schools and post offices, balancing her leisure activities with responsibilities. Emotionally stable, she adapts well to various environments and experiences. With a curiosity for new experiences, such as exploring different malls, restaurants, and cultural sites like sculptures and bridges, User 486 is open to new adventures. Key locations for possible future visits include local academic institutions, food spots, and scenic areas.",
+    "POI_Ids": [
+        7067,
+        3005,
+        113,
+        9510,
+        3786,
+        7721
+    ]
+}

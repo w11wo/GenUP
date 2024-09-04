@@ -1,0 +1,42 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "shopping",
+        "fast food",
+        "casual dining",
+        "casinos",
+        "travel",
+        "breweries"
+    ],
+    "routines": [
+        "regular visits to malls",
+        "frequent dining out",
+        "occasional visits to breweries and casinos",
+        "travel on weekends"
+    ],
+    "user_profile": "User 2125 is an outgoing male in his early thirties, who enjoys social interactions and a variety of activities. He is likely to be educated beyond high school, suggesting he values personal growth and knowledge. His interests include frequent trips to malls, where he shops for clothing and other items, complemented by a love for casual dining, particularly burgers. User 2125 displays a fondness for breweries, casinos, and resorts, indicating a lifestyle that incorporates entertainment and leisure. His routine suggests he enjoys spontaneous outings, especially on weekends, perhaps indicating a flexible schedule. Additionally, his travel check-ins at several airports reveal a tendency for exploring new places, showcasing his openness to new experiences. User 2125 enjoys a moderate socioeconomic level, which allows him to engage in leisure activities without financial strain. Notable places he will likely visit in the future include POI ID 4040 (Mall), POI ID 5685 (Casino), and POI ID 8255 (Resort), reinforcing his patterns of enjoying social venues.",
+    "POI": [
+        594,
+        1769,
+        4040,
+        8732,
+        877,
+        5685,
+        8255,
+        625,
+        348,
+        3853
+    ]
+}

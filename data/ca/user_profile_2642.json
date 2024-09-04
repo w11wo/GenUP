@@ -1,0 +1,36 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "health and fitness",
+        "Asian cuisine",
+        "coffee shops",
+        "grocery shopping",
+        "educational activities"
+    ],
+    "routines": [
+        "frequent health and fitness visits",
+        "regular trips to Starbucks",
+        "weekly grocery shopping",
+        "visits to educational institutions"
+    ],
+    "user_profile": "User 2642 is a health-conscious adult male who enjoys visiting fitness centers and maintaining a healthy lifestyle. He frequents various Asian cuisine restaurants, often stopping by Starbucks for coffee. An active participant in educational activities, he regularly visits places related to college and education. Observing a pattern of consistently visiting health and fitness locations, it\u2019s clear that maintaining physical health is a priority for him. His sociable nature is evident through his regular visits to breweries and microbreweries, reflecting his extroverted and agreeable personality. User 2642 is also conscientious, demonstrating a structured approach towards education, frequently visiting academic facilities. With regular routines that include grocery shopping at Trader Joe's and visits to various terminals, his organized lifestyle is marked by a stable emotional state and a readiness for new experiences. Anticipating future visits, places of interest could include additional health and fitness locations, Asian restaurants, and educational institutions.",
+    "POI_ids_future": [
+        8088,
+        8241,
+        8230,
+        5743,
+        3511
+    ]
+}

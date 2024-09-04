@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "socializing in parks",
+        "studying in student centers",
+        "visiting libraries",
+        "attending events in halls",
+        "enjoying recreational activities"
+    ],
+    "routines": [
+        "frequent visits to the university",
+        "daily study sessions",
+        "weekly coffee shop visits",
+        "regular exercise at the recreation center",
+        "occasional library research"
+    ],
+    "user_profile": "User 1911 is a sociable adult male in his twenties, pursuing a college education, likely focused on a balanced academic and leisure lifestyle. His check-ins indicate a strong preference for engaging in activities that promote social connection and learning, such as visiting universities, student centers, and libraries. He enjoys outdoor activity in parks, which reflects a desire for a healthy lifestyle and relaxation. Regular visits to recreational centers suggest a commitment to physical fitness and team activities. His conscientiousness is evident through frequent study sessions and educational events, while his openness is underscored by diverse interests from social settings to academic pursuits. As a sociable individual, he likely thrives in collaborative environments and seeks balance between work and leisure, favoring places where he can connect with others. As such, POI IDs of interest include the university (3569), student center (1881), rec center (1903), and local parks (25)."
+}

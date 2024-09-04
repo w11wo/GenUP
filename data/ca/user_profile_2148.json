@@ -1,0 +1,28 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "fitness",
+        "sushi",
+        "Asian food",
+        "Italian food",
+        "American cuisine"
+    ],
+    "routines": [
+        "gym workouts",
+        "dining out with friends",
+        "commuting"
+    ],
+    "user_profile": "User 2148 is a social and active adult woman who enjoys fitness and socializing over meals. She regularly visits 24 Hour Fitness, indicating a commitment to her physical health and a preference for maintaining an active lifestyle. Her frequent visits to various restaurants, including sushi, Asian, Italian, and American cuisine, suggest that she is adventurous in trying different foods and likely enjoys sharing these experiences with friends, emphasizing her extroverted and agreeable nature. The patterns in her check-ins show she often utilizes train stations, indicating she likely has a busy schedule that involves commuting for work or leisure. Given her educational background, she is possibly engaged in a professional career that allows her to afford dining out regularly, suggesting a middle socioeconomic level. This person\u2019s balanced emotional stability and openness to experience guide her habits and interactions, making her a friendly and approachable individual who embraces diverse experiences. Future points of interest may include more dining establishments, further fitness centers, and social venues. Code for future consideration includes POI IDs such as 7240 (fitness), 6144 (sushi), and 6883 (Italian)."
+}

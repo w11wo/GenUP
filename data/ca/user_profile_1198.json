@@ -1,0 +1,29 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "bakery treats",
+        "coffee",
+        "Asian cuisine",
+        "vegetarian/vegan options",
+        "visiting markets and zoos"
+    ],
+    "routines": [
+        "regular coffee shop visits",
+        "weekend trips to the farmers market",
+        "occasional late-night outings",
+        "frequent visits to bakeries"
+    ],
+    "user_profile": "User 1198 is a sociable male in his late twenties with a penchant for coffee and baked goods. He frequently visits local coffee shops like Peet's Coffee, showcasing his love for caffeine and social gatherings. His culinary interests lean towards Asian cuisine, with regular visits to Asian restaurants, highlighting an adventurous palate. User 1198 values health-conscious eating, as suggested by his visits to vegetarian and vegan establishments. He often explores weekend farmers markets, reflecting a preference for fresh, local produce. While he enjoys nightlife, as indicated by his late-night outings to dive bars, he balances this with routine visits to tranquil spots like libraries and zoos, indicating a well-rounded lifestyle. His openness to new experiences is evident, and he might appreciate venues that promote cultural diversity. Look for him to continue visiting these types of locations, and possibly explore new eateries or local events. Important places of interest may include local farmers markets (POI id 1390) and coffee houses (POI id 542)."
+}

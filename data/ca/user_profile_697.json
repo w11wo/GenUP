@@ -1,0 +1,31 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "upper"
+    ],
+    "preferences": [
+        "Mexican cuisine",
+        "coffee shops",
+        "outdoor activities",
+        "shopping",
+        "cooking",
+        "performing arts",
+        "fitness"
+    ],
+    "routines": [
+        "daily coffee shop visits",
+        "frequent grocery runs",
+        "weekend outings to parks",
+        "airport travel for business"
+    ],
+    "user_profile": "User 697 is a socially active adult male in his late twenties with a penchant for coffee shops, Mexican cuisine, and outdoor activities. He leads a busy lifestyle characterized by frequent visits to corporate offices and an appreciation for local grocery stores like Whole Foods. He enjoys performing arts, as evidenced by his visits to cultural venues and plays, and frequently participates in fitness activities. His outgoing nature leads him to explore new restaurants, particularly favorites like Chipotle and various burger joints. User 697 seems well-educated and holds a stable job, which explains his upper socioeconomic status. He has a routine of visiting coffee shops multiple times a week, often combining them with grocery shopping trips. His interest in artistic and cultural endeavors suggests openness to new experiences. Future potential visits may include regional parks (POI id 6500), performing arts venues (POI id 481), and local malls (POI id 2262) for shopping or leisure activities."
+}

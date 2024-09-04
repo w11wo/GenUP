@@ -1,0 +1,41 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adolescent",
+        "male",
+        "high school",
+        "middle"
+    ],
+    "preferences": [
+        "Mexican cuisine",
+        "fine dining",
+        "theater and sports events",
+        "grocery shopping",
+        "leisure activities at Disneyland"
+    ],
+    "routines": [
+        "frequent visits to services",
+        "regular grocery shopping",
+        "social outings at restaurants and events",
+        "attending local theaters and stadiums"
+    ],
+    "user_profile": "User 1998 is an outgoing adolescent male who enjoys a mix of social and leisure activities. He frequently visits a variety of dining options, particularly Mexican cuisine and fine dining establishments. In addition to his culinary interests, he enjoys amenity-focused services, with multiple visits recorded to service locations, indicating an affinity for convenience. User 1998 demonstrates a balanced routine that includes grocery shopping at establishments like Trader Joe's and Whole Foods. His interest in cultural experiences is evident from his visits to theaters and stadiums, suggesting he appreciates entertainment and gatherings. User 1998 also enjoys escapades to Disneyland Resort, showing his playful side and desire for adventurous activities. With an open personality and agreeable nature, he flourishes in social settings and embraces new experiences. Future visits to similar dining and entertainment venues are likely, alongside more excursions to vibrant service locations. This user can be anticipated to maintain an active, socially-oriented lifestyle.",
+    "POI": [
+        "3214",
+        "8686",
+        "908",
+        "1635",
+        "553",
+        "1656",
+        "63",
+        "2166",
+        "3541",
+        "5055"
+    ]
+}

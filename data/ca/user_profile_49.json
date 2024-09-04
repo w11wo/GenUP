@@ -1,0 +1,28 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee shops",
+        "sushi",
+        "Mexican food",
+        "live music",
+        "libraries"
+    ],
+    "routines": [
+        "commuting via light rail",
+        "visiting parks and libraries",
+        "enjoying social outings with friends"
+    ],
+    "user_profile": "User 49 is an extroverted male in his early 30s, identified as a middle-income individual with a college-level education. He frequently visits coffee shops, showcasing a strong preference for social spaces where he can engage with others and enjoy beverages. His persistent visits to light rail stations and libraries indicate a structured daily routine focused on commuting and knowledge acquisition. He enjoys diverse cuisines, particularly sushi and Mexican, and often seeks out live music venues, indicating a tendency to appreciate cultural experiences. User 49 is organized and reliable, often balancing work commitments with leisure activities such as visits to parks and health clubs. Expected future visits may include the local science museum, various breweries, and cultural events at convention centers. Key locations are POI IDs 256 (Convention Center), 2853 (Library), and 3389 (Starbucks). Overall, User 49's habits and preferences reflect an active, socially engaged lifestyle with a passion for learning and cultural exchanges."
+}

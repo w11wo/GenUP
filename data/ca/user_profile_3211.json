@@ -1,0 +1,63 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "shopping",
+        "social activities",
+        "food exploration",
+        "attending performances",
+        "team sports"
+    ],
+    "routines": [
+        "visits cafes regularly",
+        "attends church weekly",
+        "goes shopping at least once a week",
+        "visits parks and beaches",
+        "frequently watches movies"
+    ],
+    "user_profile": "User 3211 is an engaged adult female in her mid-20s, balancing work and leisure with an active lifestyle. She enjoys shopping at stores like Target and Walmart, indicating a conscientious approach to managing her needs and budget, as well as social interactions. Frequent check-ins at cafes like Starbucks and local eateries suggest she values social gatherings and food experiences. User 3211 visits cultural venues like performing arts centers and cineplexes, showcasing her openness to new experiences and interest in community events. Church visits reflect her agreeable nature and possibly a sense of community. She\u2019s likely to return to places such as the beach, parks, and historical landmarks, seeking recreational activities that allow her to enjoy nature and connect with friends. Future check-ins may include visits to the university, additional cafes, and popular local attractions, as well as exploring new restaurants and recreational activities.",
+    "POI_ids": [
+        6423,
+        6874,
+        7112,
+        4880,
+        4748,
+        825,
+        6846,
+        3915,
+        7070,
+        1687,
+        6013,
+        4741,
+        5996,
+        5631,
+        3464,
+        3279,
+        2117,
+        2708,
+        4786,
+        5720,
+        2750,
+        4858,
+        6672,
+        932,
+        800,
+        3223,
+        6825,
+        7027,
+        1093,
+        6266,
+        7185
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "cafes",
+        "beaches",
+        "wine",
+        "theater",
+        "shopping",
+        "books",
+        "music",
+        "French cuisine"
+    ],
+    "routines": [
+        "morning coffee",
+        "beach outings",
+        "grocery shopping",
+        "visits to bookstores",
+        "social outings at cafes and restaurants",
+        "attending theater shows"
+    ],
+    "user_profile": "User 3510 is an adult female with a college education and a middle socioeconomic status. She exhibits extroverted tendencies, actively enjoying social venues like coffee shops and restaurants. Her check-ins reflect a strong preference for outdoor activities, particularly at the beach, indicating she values relaxation and socialization. User 3510 is agreeable, frequently exploring communal spaces such as theaters and bookstores, suggesting a love for culture and creativity. She demonstrates conscientiousness through organized shopping habits at grocery stores and retailers like Trader Joe's and Target. Emotionally stable, she seems to manage her time well between leisure at cafes and entertainment activities. Her openness to new experiences is evident in her dining choices\u2014frequenting diverse restaurants including French cuisine and participating in various leisure activities. Future visits might include popular places like bookstores (POI ID 1221), cafes (POI ID 5501), and blowout beach days (POI ID 3262, 4181)."
+}

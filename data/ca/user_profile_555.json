@@ -1,0 +1,36 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "upper"
+    ],
+    "preferences": [
+        "modern cuisine",
+        "health and fitness activities",
+        "social gatherings",
+        "coffee shops",
+        "cinema"
+    ],
+    "routines": [
+        "frequent visits to modern places",
+        "regular fitness activities",
+        "social engagements at halls",
+        "coffee shop visits",
+        "watching movies"
+    ],
+    "user_profile": "User 555 is a 28-year-old male with a strong affinity for modern environments and social gatherings. He regularly visits the same modern POI, indicating a clear preference for the atmosphere and offerings of that location, which can be a trendy restaurant or lounge. The user enjoys engaging in health and fitness activities, evidenced by their frequent visits to fitness-related locations. Socially active, he often attends events at local halls, showing a preference for communal activities. With a past focus on caffeine, as shown by repeated trips to Starbucks, it's likely that coffee culture plays a significant role in his social life. The user's open-mindedness is further reflected by his varied interests, including cinema, contributing to his emotionally stable and generally agreeable demeanor. As a college-educated individual from an upper socioeconomic background, he values both social connections and personal health.",
+    "POI_ids_future": [
+        7346,
+        7466,
+        7470,
+        2865
+    ]
+}

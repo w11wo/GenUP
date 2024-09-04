@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "socializing",
+        "movies",
+        "coffee shops",
+        "nightlife",
+        "beach activities",
+        "luxury experiences"
+    ],
+    "routines": [
+        "exploring new venues",
+        "attending social gatherings",
+        "enjoying outdoor activities",
+        "frequenting local dining spots"
+    ],
+    "user_profile": "User 98 is an active adult male in his late twenties, likely pursuing higher education or a career with a middle socioeconomic background. Preferring an extroverted lifestyle, he regularly seeks social engagement, often visiting dive bars, luxury hotels, and various nightlife venues. His activity pattern indicates strong preferences for cinematic experiences, illustrated by frequent trips to the AMC Theatre, as well as a fondness for coffee shops for casual gatherings or study sessions. User 98 embraces spontaneity and new experiences, as seen in his trips to the beach and varied dining options, including iconic fast-food spots like In-N-Out Burger. With a balance of conscientiousness and emotional stability, he navigates social interactions with ease and enthusiasm, favoring the vibrant aspects of adult life. Expected future locations for User 98 include local bars (POI id 4637), beaches (POI id 6695), and possibly trendy restaurants or events that capture his adventurous spirit."
+}

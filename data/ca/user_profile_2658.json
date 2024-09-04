@@ -1,0 +1,36 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "baking",
+        "social gatherings",
+        "theater experiences",
+        "coffee culture",
+        "outdoor markets",
+        "traveling"
+    ],
+    "routines": [
+        "frequenting coffee shops",
+        "regular visits to resorts",
+        "attending social events",
+        "shopping at Target",
+        "visiting bakeries and farmers markets"
+    ],
+    "user_profile": "User 2658 is an outgoing individual who enjoys social environments and exploration. Regular visits to coffee shops and bakeries highlight her appreciation for social experiences and community engagement. Recent check-ins at resorts and Disneyland suggest a love for travel and entertainment, indicating enjoyment of immersive experiences and play. She frequents both Target and outdoor farmers markets, demonstrating a balanced routine of convenience shopping and community support, showcasing conscientiousness in her choices. Her evening visits to theaters and dance floors signify an eagerness to engage in cultural activities, reinforcing her openness to new experiences. The mix of leisure shopping and vibrant social outings suggests an active lifestyle that caters to both personal interests and sociability. As a middle-class adult female with a college education, her socioeconomic background offers her diverse opportunities for engagement. Future potential places of interest include local art galleries (POI id 9999), concerts (POI id 8888), and new restaurants (POI id 7777), which align with her established preferences.",
+    "important_future_POIs": [
+        "9999",
+        "8888",
+        "7777"
+    ]
+}

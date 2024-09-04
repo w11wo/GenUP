@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "frequent coffee shop visits",
+        "enjoys Asian and American cuisine",
+        "prefers art and culture activities",
+        "frequent visits to Subways",
+        "likes desserts like frozen yogurt and ice cream"
+    ],
+    "routines": [
+        "coffee shop stops in the morning and evenings",
+        "regularly visits art and culture events",
+        "enjoys casual meals at Asian or American restaurants",
+        "uses public transport (Light Rail) frequently",
+        "shops at local bookstores and Trader Joe's"
+    ],
+    "user_profile": "User 2153 is a socially active adult male, who frequently enjoys visiting coffee shops and restaurants, particularly Subway, Asian, and American food venues. He often explores art and cultural spaces, indicating a strong preference for creative experiences. His routine reflects regular stops at coffee shops throughout the week, along with an affinity for desserts like frozen yogurt and ice cream. He demonstrates conscientious behavior with punctual visits to various locations, utilizing public transport for commuting. Predominantly operating in a college or post-college setting, he engages with both local arts and social activities, demonstrating an open-mindedness towards new experiences and a stable emotional disposition. Anticipated future visits may include local art galleries (POI id 4618) and cafes like Peet's Coffee (POI id 1679)."
+}

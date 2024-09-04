@@ -1,0 +1,42 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "social gatherings",
+        "historical places",
+        "coffee shops",
+        "anthique hotels",
+        "museums"
+    ],
+    "routines": [
+        "visits to apartments",
+        "grocery shopping",
+        "dog park outings",
+        "breakfast at cafes",
+        "attending events at halls"
+    ],
+    "user_profile": "User 873 is an outgoing and socially engaged individual who enjoys exploring various facets of culture and history, reflecting a high level of openness to experience. Likely in their late 20s to early 30s, they actively participate in community events, as evidenced by their frequent visits to a hall and antique hotel for social gatherings or cultural events. Their routine includes regular visits to an apartment, indicating stability and comfort at home, alongside frequent grocery shopping outings, reflecting conscientiousness in managing their daily life. User 873 also enjoys breakfast at local cafes and dog park visits, suggesting a preference for lively, pet-friendly environments. Their educational background appears to be at least college level, and they navigate the middle socioeconomic tier with apparent comfort. This blend of preferences and routines paints a picture of an emotionally stable, engaging person who values community connection and personal experiences.",
+    "POI_ids": [
+        3036,
+        2868,
+        6505,
+        1900,
+        2696,
+        3879,
+        2423,
+        1567,
+        1587,
+        6439
+    ]
+}

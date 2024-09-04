@@ -13,6 +13,7 @@ python src/generate_user_profile.py --dataset ca
 
 ```sh
 python src/create_sft_dataset.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-POI
+python src/create_sft_dataset.py --dataset ca --dataset_id w11wo/FourSquare-CA-POI
 ```
 
 ### SFT Training with QLoRA and FSDP

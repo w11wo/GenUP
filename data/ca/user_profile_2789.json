@@ -1,0 +1,35 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "food",
+        "outdoor activities",
+        "fitness",
+        "theater"
+    ],
+    "routines": [
+        "visiting health and fitness centers regularly",
+        "attending live performances or theaters",
+        "spending time in outdoor and recreational areas"
+    ],
+    "user_profile": "User 2789 is an active adult male in his late 20s with a penchant for outdoor activities and a well-balanced lifestyle. He enjoys visiting a variety of places, often prioritizing health and fitness, reflected in his routine of frequent visits to gyms and health centers. A lover of food, he often explores diverse culinary experiences and is particularly drawn to social dining spots. User 2789 also enjoys engaging in outdoor sports like skiing, indicating a preference for dynamic and adventurous activities. His interest in local theaters suggests he values cultural experiences and enjoys community events. As someone with a college education, he likely occupies a job that allows him the flexibility to maintain an active social life, reflected in his extroverted nature and engagement in group activities. Overall, he demonstrates a balance of conscientiousness in his fitness routines with an openness to new experiences and social interactions, making him a well-rounded individual who values health, culture, and community.",
+    "important_POIs": [
+        1196,
+        4285,
+        4284,
+        3358,
+        2124,
+        1290
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "American cuisine",
+        "fast food",
+        "coffee shops",
+        "casual dining",
+        "bakeries",
+        "church and community activities",
+        "shopping malls",
+        "breweries",
+        "frozen yogurt",
+        "Mexican food",
+        "wings"
+    ],
+    "routines": [
+        "weekly church visits",
+        "frequent fast food dining",
+        "coffee shop outings",
+        "regular mall visits",
+        "social gatherings at breweries or lounges"
+    ],
+    "user_profile": "User 3397 is an extroverted male in his late 20s, demonstrating a strong preference for social settings and communal experiences. He balances his social life with a conscientious routine that includes frequent visits to local churches, indicating strong community ties, and regular trips to coffee shops and eateries such as In-N-Out Burger and American restaurants. With a college education and a middle-class background, he enjoys a blend of casual dining and relaxation spots like breweries and shopping malls. His diverse food preferences range from American cuisine to wings and frozen yogurt. User 3397 appears to have a stable emotional profile and is open to new experiences, often trying out different food venues and engaging with friends. High visit frequencies to certain locations, particularly the church (POI id 7385), suggest that community and connection are central to his lifestyle. Anticipated future visits may include favorite dining spots and entertainment venues (POI ids 113 for stadiums and 5706 for coffee shops)."
+}

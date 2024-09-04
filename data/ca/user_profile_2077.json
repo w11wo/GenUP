@@ -1,0 +1,42 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adolescent",
+        "male",
+        "high school",
+        "middle"
+    ],
+    "preferences": [
+        "shopping",
+        "sports and recreation",
+        "entertainment",
+        "travel",
+        "social gatherings",
+        "desserts",
+        "Asian cuisine",
+        "movie-going"
+    ],
+    "routines": [
+        "visits the rec center frequently",
+        "enjoys visiting malls",
+        "frequent attendee at amusement parks",
+        "regular cinema visits",
+        "dines at various restaurants",
+        "engages in recreational activities"
+    ],
+    "user_profile": "User 2077 is a socially active adolescent male who enjoys a vibrant lifestyle and actively participates in various recreational activities. He prefers visiting malls and recreation centers, which reflects a strong inclination toward social interactions and physical activities. His frequent visits to Disneyland demonstrate an adventurous spirit and love for entertainment, illustrating openness to new experiences. With a taste for diverse cuisines, such as Asian and dessert options, he enjoys both social dining and casual outings, contributing to an agreeable nature. Regular trips to the cinema also highlight his appreciation for storytelling and cultural experiences. Balancing sports with leisure, he maintains a conscientious routine focused on entertainment and friendship. As a middle socioeconomic student, he values the joy of sharing experiences and discovering new places.",
+    "future_POI_ids": [
+        861,
+        1885,
+        1302,
+        1303,
+        1944,
+        3129
+    ]
+}
