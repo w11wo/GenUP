@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 import pandas as pd
-from tqdm.auto import tqdm
+from tqdm.contrib.concurrent import thread_map
 
 from gpt import GPT
 
@@ -13,6 +13,7 @@ def parse_args():
     parser.add_argument("--input_path", type=str, default="./LLM4POI/")
     parser.add_argument("--output_path", type=str, default="./data")
     parser.add_argument("--dataset", type=str, required=True, default="nyc")
+    parser.add_argument("--num_workers", type=int, default=8)
     return parser.parse_args()
 
 
@@ -36,13 +37,13 @@ def main(args):
 
     llm = GPT()
 
-    for user_id in tqdm(users):
+    def generate_user_profile(user_id):
         output_file_path = output_path / args.dataset / f"user_profile_{user_id}.json"
         output_file_path.parent.mkdir(parents=True, exist_ok=True)
 
         if output_file_path.exists():
             print(f"User {user_id} profile already exists.")
-            continue
+            return
 
         user_df = train_df[train_df["UserId"] == user_id]
         user_history_prompt = " ".join(user_df["prompt"].values)
@@ -53,6 +54,8 @@ def main(args):
         # save user profile summary
         with open(output_file_path, "w") as f:
             json.dump(result, f, indent=4)
+
+    _ = thread_map(generate_user_profile, users, max_workers=args.num_workers)
 
 
 if __name__ == "__main__":
