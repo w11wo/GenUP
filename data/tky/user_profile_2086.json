@@ -1,0 +1,34 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "public transport",
+        "snacks from convenience stores",
+        "shopping at malls",
+        "visiting parks and coffee shops"
+    ],
+    "routines": [
+        "commuting via subway and train stations",
+        "frequent visits to convenience stores",
+        "shopping trips once a week"
+    ],
+    "user_profile": "User 2086 is a sociable adult male, reflecting a blend of openness and conscientiousness, as indicated by his regular check-ins at various public transport stations. He frequently utilizes subways and train stations, signaling a preference for swift travel and community engagement. His regular visits to convenience stores suggest he enjoys easy access to snacks and daily essentials. Notably, he displays an active lifestyle with occasional shopping trips to malls and department stores, indicating an appreciation for retail experiences. User 2086 likely has a balanced routine, incorporating both public commuting and leisure, including visits to parks and coffee shops, marking him as someone who appreciates both efficiency and social interaction. Furthermore, this user shows a tendency to explore new experiences, supported by his frequent visits to different transit points and retail locations. Anticipated future visits could include local parks, stadiums for events, and popular outdoor areas, denoted by POIs related to recreational activities.",
+    "POIs": {
+        "future_visits": [
+            3257,
+            3036,
+            4478
+        ]
+    }
+}

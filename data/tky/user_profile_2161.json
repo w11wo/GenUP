@@ -1,0 +1,43 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "neurotic",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "Japanese cuisine",
+        "ramen",
+        "shopping",
+        "exploring scenic locations",
+        "visiting historic sites",
+        "socializing at bars"
+    ],
+    "routines": [
+        "frequent visits to public transport like trains and subways",
+        "regular dining out at restaurants",
+        "shopping at malls and stores",
+        "exploring outdoor locations",
+        "visiting scenic and historic sites"
+    ],
+    "user_profile": "User 2161 is an open and extroverted adult who actively engages with their surroundings, showing a fondness for social activities such as dining at Japanese restaurants and visiting local bars. The user enjoys exploring scenic sites and historic locations, indicating a curiosity about the world around them. They frequent train stations and malls, suggesting a reliance on public transport and an appreciation for shopping. Their exceptional conscientiousness is reflected in their organized patterns of travel and exploration, while their agreeable nature helps foster social connections during outings. Frequently returning to places like ramen houses and scenic lookouts highlights a preference for experiences that blend culinary enjoyment with exploration. They appear to maintain a balanced lifestyle with both routine and spontaneity, making them a well-rounded individual who balances exploration, social interaction, and culinary enjoyment.",
+    "future_POIs": [
+        5600,
+        1133,
+        3043,
+        1828,
+        1829,
+        4984,
+        3703,
+        231,
+        6197,
+        7589
+    ]
+}

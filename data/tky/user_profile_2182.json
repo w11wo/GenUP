@@ -1,0 +1,36 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "trains",
+        "electronics",
+        "convenience shopping",
+        "visiting parks",
+        "attending concerts"
+    ],
+    "routines": [
+        "frequent train travel",
+        "visits to electronics stores",
+        "attending college classes",
+        "park outings on weekends"
+    ],
+    "user_profile": "User 2182 is a diligent adult female in her early twenties, active in her academic pursuits, demonstrating a preference for structured activities and socializing in small groups rather than large gatherings. Her frequent drop-ins at various train stations indicate a reliance on public transportation, suggesting she may use trains as her primary mode of commute to and from college. She often visits electronics stores to stay updated with the latest gadgets, reflecting her interest in technology. Parks are a favored destination, providing a relaxing escape, especially on weekends. User 2182 is likely well-organized, attending classes regularly, with a balanced routine that incorporates study, socializing, and leisure. Her agreeable nature is shown through frequent interactions in familiar environments, like local shops and academic buildings. The user might visit POIs such as POI id 6125 (College Academic Building), POI id 3402 (Train Station), and a local mall. As a conscientious individual, she manages her time effectively, balancing her educational responsibilities with her hobbies.",
+    "important_pois": [
+        6125,
+        3402,
+        89,
+        3846,
+        310
+    ]
+}

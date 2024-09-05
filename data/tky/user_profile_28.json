@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open to experience"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "avid reader",
+        "enjoys ramen and noodle dishes",
+        "frequent coffee shop visitor",
+        "interested in electronics and technology",
+        "likes visiting bookstores and museums"
+    ],
+    "routines": [
+        "often travels via train",
+        "regularly visits coffee shops",
+        "spends leisure time reading",
+        "frequents restaurants and noodle houses",
+        "attends movies and cultural events"
+    ],
+    "user_profile": "User 28 is an enthusiastic and sociable adult who thrives on exploring new experiences and engaging with others. She has a passion for reading and can frequently be found in bookstores or coffee shops, enjoying a good novel or discovering the latest in literature. Her love for ramen pushes her to visit various noodle houses, seeking out the perfect bowl. With a conscientious mindset, she carefully balances her academic interests at the university with her diverse social activities, including regular visits to local train stations that cater to her travel needs. User 28 maintains a calm demeanor, showcasing emotional resilience through her explorative lifestyle. Her attraction to electronics stores hints at a tech-savvy nature, while outings to art museums and movie theaters reflect a keen appreciation for culture. Looking forward, she may continue to explore popular destinations such as train stations (POI ID 44) and electronics stores (POI ID 6631) while continuing her intellectual journey in bookstores (POI ID 1506) and museums (POI ID 1461)."
+}

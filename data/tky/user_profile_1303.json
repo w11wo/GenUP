@@ -1,0 +1,37 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "spending time at college and trade schools",
+        "using public transportation",
+        "enjoying movies and arcades",
+        "eating at Subway",
+        "shopping at malls"
+    ],
+    "routines": [
+        "daily visits to Subway and train stations",
+        "frequent visits to academic buildings",
+        "regular trips to the mall",
+        "attending classes or training sessions",
+        "engaging in leisure activities like visiting arcades"
+    ],
+    "user_profile": "User 1303 is an active adult female who balances her time between academics and leisure. Her frequent check-ins at various college and trade school buildings indicate a strong commitment to her educational pursuits, suggesting that she is likely a student engaged in a competitive program. She shows a prominent preference for convenience, often visiting Subway restaurants and train stations, likely relying on public transportation for her daily commute. User 1303 enjoys social outings, evidenced by frequent visits to entertainment venues like arcades and movie theaters, revealing an extroverted nature and a tendency to pursue experiences that foster social interactions. Additionally, her routine suggests she is conscientious and organized, as she consistently maintains a structured schedule around her academic commitments and social activities. With a balanced approach to her responsibilities and leisure, 1303 is open to new experiences, making her a well-rounded individual.",
+    "future_POI": [
+        "238",
+        "4083",
+        "6346",
+        "7292",
+        "150"
+    ]
+}

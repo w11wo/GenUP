@@ -1,0 +1,37 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee",
+        "sandwiches",
+        "academic engagement",
+        "public transport",
+        "subway travel",
+        "exploring malls",
+        "books"
+    ],
+    "routines": [
+        "visiting college frequently",
+        "taking public transport regularly",
+        "socializing at coffee shops",
+        "studying in academic buildings",
+        "having meals at sandwich places"
+    ],
+    "user_profile": "User 1097 is an adult male with a strong focus on academic pursuits, demonstrating consistent visitation to college and university buildings, indicative of an engaged student life. He frequents coffee shops and sandwich places, suggesting a preference for casual dining and socializing in relaxed environments. His routine includes regular trips to public transportation hubs, particularly train stations and subways, indicating a reliance on these for commuting. User 1097 appears to be introverted yet approachable, suggesting he enjoys quiet social interactions rather than large gatherings. His conscientiousness reflects in his academic commitments, while emotional stability allows him to handle stress well. He demonstrates openness to new experiences, as seen in his visits to malls and bookstores, blending leisure with his study-driven lifestyle. In the future, he may be likely to visit notable POI IDs such as 2896 (Coffee Shop), 1761 (College Academic Building), and various sandwich places (like ID 7373) as part of his established patterns.",
+    "POI_ids": [
+        2896,
+        1761,
+        7373
+    ]
+}

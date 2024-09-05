@@ -1,0 +1,37 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "coffee shops",
+        "American cuisine",
+        "subway sandwiches",
+        "train travel",
+        "restaurant dining"
+    ],
+    "routines": [
+        "regular visits to coffee shops",
+        "frequent dining at American restaurants",
+        "occasionally using the subway",
+        "visiting the train station"
+    ],
+    "user_profile": "User 2195 is a socially engaged female in her late twenties, exhibiting distinct extroverted traits through her choice of frequenting coffee shops and American restaurants. She shows a penchant for the culinary delights of American cuisine while favoring coffee as a daily ritual. Her routine includes multiple visits to the same establishments, reflecting a stable routine and approach to social gatherings. She enjoys using public transportation, as evidenced by her trips to a train station, suggesting a level of independence and exploration. This user also displays high agreeableness, often opting for sociable and community-oriented places, and she appears conscientious, with consistent patterns of choosing quality dining experiences. The predictability of her routines indicates emotional stability, as she finds comfort in familiar environments. Furthermore, her openness to experience is reflected in her culinary preferences and varied location choices.",
+    "POIs": [
+        2770,
+        3227,
+        1464,
+        625,
+        44,
+        159
+    ]
+}

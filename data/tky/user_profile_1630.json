@@ -1,0 +1,37 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "vegetarian options",
+        "asian cuisine",
+        "outdoor parks",
+        "bookstores",
+        "bike shops"
+    ],
+    "routines": [
+        "lunch at ramen house",
+        "morning subway ride",
+        "weekend bike rides",
+        "visits to parks"
+    ],
+    "user_profile": "User 1630 is an introverted adult female who enjoys a mix of dining experiences, with a noticeable preference for Asian cuisine, particularly ramen and noodles, frequently visiting POI id 5210. She often opts for Subway sandwiches, which she frequently gets from POI ids 829 and 481. Her routine seems to revolve around structured meal times, particularly lunch, which she often has at ramen or noodle houses. She enjoys spending time outdoors in parks, specifically at POI id 6857, and integrates cycling into her lifestyle, visiting bike shops like POI id 4005 and POI id 4357. With a stable emotional state and a conscientious approach to her activities, she values social, yet low-key environments. Looking ahead, User 1630 is likely to continue her exploration of parks, noodle shops, and cafes, enriching her experiences through reading at various bookstores near POI id 3173. Overall, she balances her culinary interests with a love for more tranquil settings, making her a thoughtful and reflective individual.",
+    "important_POIs": [
+        829,
+        5210,
+        481,
+        6857,
+        4005,
+        3173
+    ]
+}

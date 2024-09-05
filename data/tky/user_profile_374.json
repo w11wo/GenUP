@@ -1,0 +1,38 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "ramen",
+        "bowling",
+        "arcades",
+        "parks",
+        "malls",
+        "fast food"
+    ],
+    "routines": [
+        "frequent visits to train stations",
+        "regular bowling outings",
+        "consistent ramen house stops",
+        "visiting malls often",
+        "playing arcade games"
+    ],
+    "user_profile": "User 374 is a sociable adult male who enjoys a diverse range of activities, reflecting an extroverted and agreeable personality. He frequents various ramen and noodle houses, indicating a strong preference for comfort food and culinary experiences. Bowling alleys are another favorite, with numerous check-ins showcasing his enjoyment of this social activity. User 374 appears to have a routine involving frequent trips to train stations, suggesting he is possibly navigating the city for recreational or social engagements. His visits to malls indicate a penchant for shopping or leisure activities. With stable emotions and an openness to new experiences, he likely balances work or studies with a lively social life. His educational background suggests he has pursued higher education, placing him in the middle socioeconomic class. This profile showcases a fun, engaged individual who thrives in social settings and delights in shared experiences, especially when linked to entertainment venues and food outings. In the future, User 374 may explore new ramen houses, bowling alleys, and gaming cafes, continuing to nurture his diverse interests.",
+    "POI_ids": [
+        547,
+        7496,
+        4086,
+        6218,
+        770
+    ]
+}

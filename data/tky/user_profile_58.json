@@ -1,0 +1,36 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "upper"
+    ],
+    "preferences": [
+        "art museums",
+        "science museums",
+        "historic sites",
+        "parks",
+        "stadiums",
+        "theater shows",
+        "coffee shops",
+        "ramen restaurants",
+        "athletic activities"
+    ],
+    "routines": [
+        "visiting museums regularly",
+        "exercising at the gym",
+        "going to parks",
+        "watching movies",
+        "attending live performances",
+        "exploring historic sites",
+        "frequent coffee shop visits"
+    ],
+    "user_profile": "User 58 is a socially active adult female who enjoys visiting a variety of cultural attractions. She frequently visits art and science museums, historic sites, and parks, indicating a strong appreciation for learning and nature. Her schedule includes regular visits to gyms and stadiums, showing a commitment to fitness and sports. User 58 also enjoys several forms of entertainment, including movies and theater shows, often found at local coffee shops and ramen restaurants afterwards. This suggests she values social outings, whether with friends or solo. She appears to be open to new experiences while demonstrating stability and dependability in her routines. Importantly, her repeated check-ins to cultural locations reflect an inquisitive and artistic personality, likely leading to future visits at other historic locations with POI IDs similar to 3063 (Historic Site), 1502 (Art Museum), and 3111 (Science Museum)."
+}

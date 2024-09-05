@@ -1,0 +1,30 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "movies",
+        "coffee shops",
+        "live music",
+        "dessert",
+        "Japanese cuisine",
+        "Indian cuisine",
+        "burgers"
+    ],
+    "routines": [
+        "frequent movie outings",
+        "regular coffee shop visits",
+        "attending live performances"
+    ],
+    "user_profile": "User 565 is an extroverted and agreeable male in his late twenties, actively engaged in social and recreational activities. He enjoys visiting movie theaters, with a preference for a wide variety of genres, often attending multiple screenings in a matter of days. Coffee shops are a staple of his routine, indicating a love for casual meetups and quiet reading sessions. User 565 also appreciates live music and often frequents music venues, such as concerts and theater performances, showcasing openness to varied experiences. He enjoys a mix of cuisines, especially Japanese and Indian food, and frequently dines at burger joints. His routine demonstrates a conscientious approach to his leisure time, balancing entertainment with social interactions. He likely frequents the following POIs in the future: POI id 5903 (Burger Joint), POI id 2460 (Movie Theater), and POI id 1545 (Coffee Shop)."
+}

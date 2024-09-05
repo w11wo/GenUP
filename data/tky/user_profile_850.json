@@ -1,0 +1,66 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "hobbies related to trains",
+        "exploring new places",
+        "visiting hobby shops",
+        "enjoying ramen and noodles",
+        "coffee shops"
+    ],
+    "routines": [
+        "frequent public transport usage",
+        "regular visiting of hobby shops",
+        "socializing in low-key environments like coffee shops"
+    ],
+    "user_profile": "User 850 is a male adult who enjoys exploring urban environments, particularly through frequent visits to train stations. His check-ins indicate a keen interest in hobby shops, suggesting he engages in creative pursuits or model building, possibly related to his love for trains. He exhibits a preference for casual dining experiences, particularly ramen and coffee shops, where he likely enjoys spending time in relaxed settings. His personality leans towards introversion but with agreeable traits, and he is conscientious in maintaining a routine that incorporates frequent travel and leisure activities. He has completed college or beyond, indicating a solid educational background, and appears to possess a stable emotional demeanor, reflecting resilience in social and personal endeavors. User 850 may continue to frequent key places like hobby shops (POI IDs: 4977, 7223) and train stations (POI IDs: 144, 2490) as part of their regular routine.",
+    "POI_visited": {
+        "trainStations": [
+            770,
+            4655,
+            409,
+            876,
+            1742,
+            2490,
+            277,
+            89,
+            542,
+            5121,
+            144,
+            2511,
+            5620,
+            194,
+            678,
+            632,
+            148,
+            776,
+            635,
+            4500
+        ],
+        "hobbyShops": [
+            635,
+            4977,
+            2068,
+            2006,
+            7223
+        ],
+        "foodPlaces": [
+            4203,
+            1055
+        ],
+        "malls": [
+            5797
+        ]
+    }
+}

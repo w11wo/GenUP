@@ -1,0 +1,26 @@
+{
+    "traits": [
+        "introverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open to experience"
+    ],
+    "attributes": [
+        "adult",
+        "male",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "enjoys fast food, particularly Subway",
+        "likes to visit malls and stores",
+        "frequent user of public transportation"
+    ],
+    "routines": [
+        "regularly visits different Subway locations",
+        "attends events at a local stadium",
+        "frequently shops at malls and electronics stores"
+    ],
+    "user_profile": "User 1223 is a somewhat introverted, agreeable male in his late twenties. He is well-educated, likely holding a college degree, and belongs to the middle socioeconomic class. His routine shows a strong preference for fast-food dining, particularly Subway; he has visited various locations multiple times in a single day. He enjoys shopping at malls and has a notable habit of using public transportation, frequently visiting train and light rail stations. User 1223 also shows an openness to experience through visits to diverse locations, including parks and ramen noodle houses. Important places he might visit in the future include additional malls, parks, and possibly new restaurants, as well as venues for live events at the stadium, POI ids 324 and 1479 being of particular interest."
+}

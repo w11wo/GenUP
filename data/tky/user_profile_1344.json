@@ -1,0 +1,44 @@
+{
+    "traits": [
+        "extroverted",
+        "agreeable",
+        "conscientious",
+        "emotionally stable",
+        "open"
+    ],
+    "attributes": [
+        "adult",
+        "female",
+        "college & beyond",
+        "middle"
+    ],
+    "preferences": [
+        "caf\u00e9s",
+        "sushi",
+        "Italian cuisine",
+        "fast food",
+        "spas",
+        "parks",
+        "shopping",
+        "books",
+        "travel"
+    ],
+    "routines": [
+        "frequent caf\u00e9 visits",
+        "regular spa treatments",
+        "visits to parks",
+        "shopping trips"
+    ],
+    "user_profile": "User 1344 is a social and outgoing individual, likely in their late 20s to early 30s, who enjoys exploring a variety of dining experiences, from casual caf\u00e9s to sushi and Italian restaurants. They often frequent local parks and indulge in spa treatments, indicating an appreciation for both relaxation and the outdoors. Their routine showcases a blend of culinary adventures and shopping excursions, reflecting a conscientious approach to balancing work and leisure. This user also appreciates reading, as evidenced by regular visits to bookstores, suggesting they value personal growth and knowledge. Predominantly visiting caf\u00e9s and coffee shops, they may prioritize social interactions and community engagement. Overall, user 1344 leads an active lifestyle that balances culinary exploration with relaxation and self-care.",
+    "POI": {
+        "future_visits": [
+            3164,
+            184,
+            5723,
+            6077,
+            779,
+            4959,
+            6107
+        ]
+    }
+}
