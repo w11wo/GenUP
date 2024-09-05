@@ -20,6 +20,7 @@ cd $dir
 base_model="Llama-2-7b-longlora-32k-merged"
 dataset_name="FourSquare-NYC-POI"
 
-accelerate launch src/eval_next_poi.py \
+HF_HUB_OFFLINE=1 accelerate launch src/eval_next_poi.py \
     --model_checkpoint "$base_model-$dataset_name" \
-    --dataset_id "w11wo/$dataset_name"
+    --dataset_id "w11wo/$dataset_name" \
+    --apply_liger_kernel_to_llama

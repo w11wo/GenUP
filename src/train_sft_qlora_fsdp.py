@@ -55,7 +55,7 @@ def main():
     if tokenizer.add_bos_token:
         tokenizer.add_bos_token = False
 
-    response_template = " [/INST]"
+    response_template = "[/INST]"
     collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
     max_seq_length = args.max_length
 
@@ -100,6 +100,7 @@ def main():
         per_device_train_batch_size=args.batch_size,
         fp16=torch_dtype == torch.float16,
         bf16=torch_dtype == torch.bfloat16,
+        dataloader_num_workers=16,
         num_train_epochs=args.num_epochs,
         optim="adamw_torch",
         report_to="tensorboard",
