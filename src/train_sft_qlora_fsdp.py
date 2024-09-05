@@ -73,6 +73,7 @@ def main():
 
     model = AutoModelForCausalLM.from_pretrained(
         args.model_checkpoint,
+        use_cache=True if args.gradient_checkpointing else False,
         attn_implementation="sdpa",  # alternatively use "flash_attention_2"
         torch_dtype=torch_dtype,
         quantization_config=quantization_config,
@@ -91,6 +92,9 @@ def main():
         task_type="CAUSAL_LM",
     )
 
+    if args.gradient_checkpointing:
+        model.gradient_checkpointing_enable()
+
     args = TrainingArguments(
         output_dir=model_id,
         save_strategy="epoch",
@@ -98,6 +102,8 @@ def main():
         max_grad_norm=args.max_grad_norm,
         warmup_steps=args.warmup_steps,
         per_device_train_batch_size=args.batch_size,
+        gradient_checkpointing=args.gradient_checkpointing,
+        gradient_checkpointing_kwargs={"use_reentrant": True} if args.gradient_checkpointing else None,
         fp16=torch_dtype == torch.float16,
         bf16=torch_dtype == torch.bfloat16,
         dataloader_num_workers=16,
@@ -109,7 +115,6 @@ def main():
             "backward_prefetch": "backward_pre",
             "forward_prefetch": "false",
             "use_orig_params": "false",
-            "activation_checkpointing": "true" if args.gradient_checkpointing else "false",
         },
     )
 
