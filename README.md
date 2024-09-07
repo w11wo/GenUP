@@ -69,7 +69,7 @@ accelerate launch src/eval_next_poi.py \
 
 | Model             | History | Others |  NYC   |  TKY   |   CA   |
 | ----------------- | :-----: | :----: | :----: | :----: | :----: |
-| NL-Summ-Llama2-7b |    ×    |   ×    | 0.2554 |        | 0.1130 |
+| NL-Summ-Llama2-7b |    ×    |   ×    | 0.2554 | 0.1671 | 0.1130 |
 | LLM4POI*          |    ×    |   ×    | 0.2356 | 0.1517 | 0.1016 |
 | LLM4POI**         |    ✓    |   ×    | 0.3171 | 0.2836 | 0.1683 |
 | LLM4POI**         |    ✓    |   ✓    | 0.3372 | 0.3035 | 0.2065 |
