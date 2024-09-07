@@ -36,6 +36,7 @@ def parse_args():
     parser.add_argument("--num_epochs", type=int, default=3)
     parser.add_argument("--gradient_checkpointing", action="store_true")
     parser.add_argument("--apply_liger_kernel_to_llama", action="store_true")
+    parser.add_argument("--resume_from_checkpoint", action="store_true")
     parser.add_argument("--dataset_id", type=str, required=True)
     return parser.parse_args()
 
@@ -132,7 +133,7 @@ def main():
     if trainer.accelerator.is_main_process:
         trainer.model.print_trainable_parameters()
 
-    trainer.train()
+    trainer.train(resume_from_checkpoint=args.resume_from_checkpoint)
 
     if trainer.is_fsdp_enabled:
         trainer.accelerator.state.fsdp_plugin.set_state_dict_type("FULL_STATE_DICT")
