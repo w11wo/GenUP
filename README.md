@@ -74,6 +74,8 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --dataset_id "w11wo/FourSquare-TKY-POI"
 ```
 
+## Evaluation & Analyses
+
 ### Next POI Evaluation
 
 ```sh
@@ -87,6 +89,14 @@ accelerate launch src/eval_next_poi.py \
 
 ```sh
 python src/user_cold_start_analysis.py \
+    --model_checkpoint w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI \
+    --dataset_id w11wo/FourSquare-NYC-POI
+```
+
+### Trajectory Length Analysis
+
+```sh
+python src/trajectory_length_analysis.py \
     --model_checkpoint w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI \
     --dataset_id w11wo/FourSquare-NYC-POI
 ```
@@ -107,3 +117,11 @@ python src/user_cold_start_analysis.py \
 | Inactive    | NL-Summ-Llama2-7b | 0.2042 | 0.1264 | 0.1247 |
 | Normal      | NL-Summ-Llama2-7b | 0.2720 | 0.1413 | 0.0967 |
 | Very Active | NL-Summ-Llama2-7b | 0.2702 | 0.2018 | 0.1137 |
+
+## Trajectory Length Analysis Results
+
+| Trajectory Length | Model             |  NYC   |  TKY   |   CA   |
+| ----------------- | ----------------- | :----: | :----: | :----: |
+| Short             | NL-Summ-Llama2-7b | 0.1963 | 0.1117 | 0.0640 |
+| Middle            | NL-Summ-Llama2-7b | 0.2684 | 0.1590 | 0.1190 |
+| Long              | NL-Summ-Llama2-7b | 0.3117 | 0.2297 | 0.1666 |
