@@ -83,7 +83,15 @@ accelerate launch src/eval_next_poi.py \
     --apply_liger_kernel_to_llama
 ```
 
-## Results
+### User Cold-start Analysis
+
+```sh
+python src/user_cold_start_analysis.py \
+    --model_checkpoint w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI \
+    --dataset_id w11wo/FourSquare-NYC-POI
+```
+
+## POI Prediction Results
 
 | Model             | History | Others |  NYC   |  TKY   |   CA   |
 | ----------------- | :-----: | :----: | :----: | :----: | :----: |
@@ -91,3 +99,11 @@ accelerate launch src/eval_next_poi.py \
 | LLM4POI*          |    ×    |   ×    | 0.2356 | 0.1517 | 0.1016 |
 | LLM4POI**         |    ✓    |   ×    | 0.3171 | 0.2836 | 0.1683 |
 | LLM4POI**         |    ✓    |   ✓    | 0.3372 | 0.3035 | 0.2065 |
+
+## User Cold-start Analysis Results
+
+| User Groups | Model             |  NYC   |  TKY   |   CA   |
+| ----------- | ----------------- | :----: | :----: | :----: |
+| Inactive    | NL-Summ-Llama2-7b | 0.2042 | 0.1264 | 0.1247 |
+| Normal      | NL-Summ-Llama2-7b | 0.2720 | 0.1413 | 0.0967 |
+| Very Active | NL-Summ-Llama2-7b | 0.2702 | 0.2018 | 0.1137 |
