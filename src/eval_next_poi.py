@@ -111,7 +111,7 @@ def main():
         "targets": targets,
     }
 
-    with open(f"results/{model_id}-{dataset_id}.json", "w") as f:
+    with open(f"results/{model_id}.json", "w") as f:
         json.dump(result, f, indent=4)
 
 
