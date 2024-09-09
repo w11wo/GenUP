@@ -125,3 +125,11 @@ python src/trajectory_length_analysis.py \
 | Short             | NL-Summ-Llama2-7b | 0.1963 | 0.1117 | 0.0640 |
 | Middle            | NL-Summ-Llama2-7b | 0.2684 | 0.1590 | 0.1190 |
 | Long              | NL-Summ-Llama2-7b | 0.3117 | 0.2297 | 0.1666 |
+
+## Generalization to Other Datasets
+
+| Trained on |  NYC   |  TKY   |   CA   |
+| ---------: | :----: | :----: | :----: |
+|        NYC | 0.2554 | 0.1438 | 0.0920 |
+|        TKY | 0.2484 | 0.1671 | 0.0996 |
+|         CA | 0.2281 | 0.1446 | 0.1130 |
