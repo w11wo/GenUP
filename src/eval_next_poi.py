@@ -16,6 +16,9 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument("--model_checkpoint", type=str, required=True)
     parser.add_argument("--dataset_id", type=str, required=True)
+    parser.add_argument("--profiles_dataset_id", type=str)
+    parser.add_argument("--profiles_similarity_path", type=str)
+    parser.add_argument("--top_k_similar_profiles", type=int, default=5)
     parser.add_argument("--apply_liger_kernel_to_llama", action="store_true")
     return parser.parse_args()
 
@@ -24,6 +27,11 @@ def main():
     args = parse_args()
 
     dataset = load_dataset(args.dataset_id)
+    if args.profiles_dataset_id:
+        profiles_ds = load_dataset(args.profiles_dataset_id, split="train")
+        user2profile = profiles_ds.to_pandas().set_index("user_id").to_dict(orient="index")
+        with open(args.profiles_similarity_path) as f:
+            user2similarities = json.load(f)
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_checkpoint)
     if tokenizer.pad_token_id is None:
@@ -78,6 +86,7 @@ def main():
 
     predictions, targets = [], []
 
+    get_user_id = lambda x: re.match(r"<s>\[INST\] <<SYS>>\nYou are user (\d+) and .+?", x).group(1)
     lines = dataset["test"]["llama_prompt"]
     for line in tqdm(lines):
         # split prompt with target POI
@@ -85,6 +94,15 @@ def main():
         # ex. target = 123. </s>
         prompt, target, _ = re.split(r"(\d+\.\s</s>)", line)
         target = re.sub(r"[^0-9]", "", target)  # remove non-numeric tokens
+        if args.profiles_dataset_id:
+            user_id = get_user_id(prompt)
+            system_prompt, trajectory, question = re.split(
+                r"(\nThe following data is a trajectory of user \d+: .+)", prompt
+            )
+            similar_users = user2similarities[user_id][: args.top_k_similar_profiles]
+            similar_profiles = [user2profile[user_id]["user_profile"] for (user_id, _) in similar_users]
+            similar_profiles_str = "There are also users with similar profiles:\n" + "\n".join(similar_profiles)
+            prompt = system_prompt + similar_profiles_str + trajectory + question
 
         prompt_input_ids = tokenizer(prompt, return_tensors="pt").to(model.device)
         prompt_token_length = prompt_input_ids.input_ids.shape[1]
