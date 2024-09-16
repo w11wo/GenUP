@@ -13,3 +13,4 @@ trl==0.8.6
 triton>=2.3.0
 liger-kernel
 sentencepiece==0.2.0
+sentence-transformers==3.1.0
