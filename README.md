@@ -2,12 +2,18 @@
 
 ## Usage
 
+### Download Raw Dataset
+
+```sh
+git clone https://huggingface.co/datasets/w11wo/LLM4POI
+```
+
 ### Generate User Profiles
 
 ```sh
-python src/generate_user_profile.py --dataset nyc
-python src/generate_user_profile.py --dataset ca
-python src/generate_user_profile.py --dataset tky
+python src/generate_user_profile.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-User-Profiles
+python src/generate_user_profile.py --dataset ca --dataset_id w11wo/FourSquare-CA-User-Profiles
+python src/generate_user_profile.py --dataset tky --dataset_id w11wo/FourSquare-TKY-User-Profiles
 ```
 
 ### Create SFT Dataset

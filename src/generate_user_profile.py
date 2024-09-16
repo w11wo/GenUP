@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 import pandas as pd
+from datasets import Dataset
 from tqdm.contrib.concurrent import thread_map
 
 from gpt import GPT
@@ -13,6 +14,7 @@ def parse_args():
     parser.add_argument("--input_path", type=str, default="./LLM4POI/")
     parser.add_argument("--output_path", type=str, default="./data")
     parser.add_argument("--dataset", type=str, required=True, default="nyc")
+    parser.add_argument("--dataset_id", type=str, required=True)
     parser.add_argument("--num_workers", type=int, default=8)
     return parser.parse_args()
 
@@ -56,6 +58,23 @@ def main(args):
             json.dump(result, f, indent=4)
 
     _ = thread_map(generate_user_profile, users, max_workers=args.num_workers)
+
+    json_files = sorted(
+        (output_path / args.dataset).glob("user_profile_*.json"), key=lambda x: int(x.stem.split("_")[-1])
+    )
+
+    user_profiles = []
+    for json_file in json_files:
+        with open(json_file, "r") as f:
+            user_profile = json.load(f)
+        user_profile["user_id"] = json_file.stem.split("_")[-1]
+        user_profile["attributes"] = list(map(str, user_profile["attributes"]))
+        user_profiles.append(user_profile)
+
+    profiles_df = pd.DataFrame(user_profiles)
+    profiles_df = profiles_df[["user_id", "user_profile", "traits", "attributes", "preferences", "routines"]]
+    profiles_ds = Dataset.from_pandas(profiles_df)
+    profiles_ds.push_to_hub(args.dataset_id)
 
 
 if __name__ == "__main__":
