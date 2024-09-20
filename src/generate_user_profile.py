@@ -40,7 +40,7 @@ def main(args):
     llm = GPT()
 
     def generate_user_profile(user_id):
-        output_file_path = output_path / args.dataset / f"user_profile_{user_id}.json"
+        output_file_path = output_path / args.dataset / "user_profiles" / f"user_profile_{user_id}.json"
         output_file_path.parent.mkdir(parents=True, exist_ok=True)
 
         if output_file_path.exists():
@@ -51,7 +51,7 @@ def main(args):
         user_history_prompt = " ".join(user_df["prompt"].values)
 
         # generate user profile summary
-        result = llm.generate(user_id=user_id, user_history_prompt=user_history_prompt)
+        result = llm.generate_user_profile(user_id=user_id, user_history_prompt=user_history_prompt)
 
         # save user profile summary
         with open(output_file_path, "w") as f:
@@ -60,7 +60,8 @@ def main(args):
     _ = thread_map(generate_user_profile, users, max_workers=args.num_workers)
 
     json_files = sorted(
-        (output_path / args.dataset).glob("user_profile_*.json"), key=lambda x: int(x.stem.split("_")[-1])
+        (output_path / args.dataset / "user_profiles").glob("user_profile_*.json"),
+        key=lambda x: int(x.stem.split("_")[-1]),
     )
 
     user_profiles = []

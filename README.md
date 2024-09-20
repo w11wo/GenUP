@@ -16,6 +16,12 @@ python src/generate_user_profile.py --dataset ca --dataset_id w11wo/FourSquare-C
 python src/generate_user_profile.py --dataset tky --dataset_id w11wo/FourSquare-TKY-User-Profiles
 ```
 
+### Generate POI Reasoning
+
+```sh
+python src/generate_poi_reasoning.py --dataset_id w11wo/FourSquare-NYC-POI --dataset nyc
+```
+
 ### Create SFT Dataset
 
 ```sh
