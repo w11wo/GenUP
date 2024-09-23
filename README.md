@@ -28,6 +28,7 @@ python src/generate_poi_reasoning.py --dataset_id w11wo/FourSquare-NYC-POI --dat
 python src/create_sft_dataset.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-POI
 python src/create_sft_dataset.py --dataset ca --dataset_id w11wo/FourSquare-CA-POI
 python src/create_sft_dataset.py --dataset tky --dataset_id w11wo/FourSquare-TKY-POI
+python src/create_sft_dataset.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-POI-CoT --use_cot
 ```
 
 ### SFT Training with QLoRA and FSDP
@@ -86,6 +87,24 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --dataset_id "w11wo/FourSquare-TKY-POI"
 ```
 
+#### Example: Llama-3.1-8B on FourSquare-NYC-POI
+
+Train the model using QLoRA and FSDP on Llama-3.1-8B with the FourSquare-NYC-POI dataset. Runs on 2 x H100 GPUs.
+
+```sh
+ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node=2 src/train_sft_qlora_fsdp.py \
+    --model_checkpoint "meta-llama/Meta-Llama-3.1-8B" \
+    --max_length 16384 \
+    --batch_size 1 \
+    --learning_rate 2e-4 \
+    --max_grad_norm 1.0 \
+    --warmup_steps 20 \
+    --num_epochs 3 \
+    --gradient_checkpointing \
+    --apply_liger_kernel_to_llama \
+    --dataset_id "w11wo/FourSquare-NYC-POI"
+```
+
 ## Evaluation & Analyses
 
 ### Next POI Evaluation
@@ -115,12 +134,13 @@ python src/trajectory_length_analysis.py \
 
 ## POI Prediction Results
 
-| Model             | History | Others |  NYC   |  TKY   |   CA   |
-| ----------------- | :-----: | :----: | :----: | :----: | :----: |
-| NL-Summ-Llama2-7b |    ×    |   ×    | 0.2554 | 0.1671 | 0.1130 |
-| LLM4POI*          |    ×    |   ×    | 0.2356 | 0.1517 | 0.1016 |
-| LLM4POI**         |    ✓    |   ×    | 0.3171 | 0.2836 | 0.1683 |
-| LLM4POI**         |    ✓    |   ✓    | 0.3372 | 0.3035 | 0.2065 |
+| Model               | History | Others |  NYC   |  TKY   |   CA   |
+| ------------------- | :-----: | :----: | :----: | :----: | :----: |
+| NL-Summ-Llama2-7b   |    ×    |   ×    | 0.2554 | 0.1671 | 0.1130 |
+| NL-Summ-Llama3.1-8b |    ×    |   ×    | 0.2561 |        |        |
+| LLM4POI*            |    ×    |   ×    | 0.2356 | 0.1517 | 0.1016 |
+| LLM4POI**           |    ✓    |   ×    | 0.3171 | 0.2836 | 0.1683 |
+| LLM4POI**           |    ✓    |   ✓    | 0.3372 | 0.3035 | 0.2065 |
 
 ## User Cold-start Analysis Results
 

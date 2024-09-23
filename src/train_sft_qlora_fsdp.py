@@ -53,14 +53,14 @@ def main():
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
     # NOTE: we've formatted the prompt to include the <s> token at the beginning of the prompt
-    if tokenizer.add_bos_token:
+    if hasattr(tokenizer, "add_bos_token") and tokenizer.add_bos_token:
         tokenizer.add_bos_token = False
 
-    response_template = "[/INST]"
+    response_template = " [/INST]" if "Llama-3" in model_id else "[/INST]"
     collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
     max_seq_length = args.max_length
 
-    torch_dtype = torch.float16
+    torch_dtype = torch.bfloat16
 
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,

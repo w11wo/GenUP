@@ -17,6 +17,12 @@ def parse_args():
     parser.add_argument("--model_checkpoint", type=str, required=True)
     parser.add_argument("--dataset_id", type=str, required=True)
     parser.add_argument("--apply_liger_kernel_to_llama", action="store_true")
+    parser.add_argument("--use_quantization", action="store_true")
+    parser.add_argument("--temperature", type=float, default=0.6)
+    parser.add_argument("--top_k", type=int, default=40)
+    parser.add_argument("--top_p", type=float, default=0.1)
+    parser.add_argument("--typical_p", type=float, default=1.0)
+    parser.add_argument("--repetition_penalty", type=float, default=1.176)
     return parser.parse_args()
 
 
@@ -30,10 +36,10 @@ def main():
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
     # NOTE: we've formatted the prompt to include the <s> token at the beginning of the prompt
-    if tokenizer.add_bos_token:
+    if hasattr(tokenizer, "add_bos_token") and tokenizer.add_bos_token:
         tokenizer.add_bos_token = False
 
-    torch_dtype = torch.float16
+    torch_dtype = torch.bfloat16
 
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
@@ -51,7 +57,7 @@ def main():
         peft_config.base_model_name_or_path,
         attn_implementation="sdpa",  # alternatively use "flash_attention_2"
         torch_dtype=torch_dtype,
-        quantization_config=quantization_config,
+        quantization_config=quantization_config if args.use_quantization else None,
         device_map={"": device_index},
     )
 
@@ -68,11 +74,11 @@ def main():
         use_cache=True,
         eos_token_id=tokenizer.eos_token_id,
         pad_token_id=tokenizer.eos_token_id,
-        temperature=0.6,
-        top_k=40,
-        top_p=0.1,
-        typical_p=1.0,
-        repetition_penalty=1.176,
+        temperature=args.temperature,
+        top_k=args.top_k,
+        top_p=args.top_p,
+        typical_p=args.typical_p,
+        repetition_penalty=args.repetition_penalty,
         num_return_sequences=1,
     )
 
