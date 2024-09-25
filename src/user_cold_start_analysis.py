@@ -19,6 +19,7 @@ def main():
     model_checkpoint = args.model_checkpoint.split("/")[-1]
 
     dataset = load_dataset(args.dataset_id)
+    dataset_id = args.dataset_id.split("/")[-1]
 
     train_df = dataset["train"].to_pandas()
     test_df = dataset["test"].to_pandas()
@@ -49,7 +50,7 @@ def main():
     test_df["user_activity"] = test_df["user"].apply(lambda user: user2activity[user])
 
     # load eval results
-    with open(f"results/{model_checkpoint}.json") as f:
+    with open(f"results/{model_checkpoint}-{dataset_id}.json") as f:
         results = json.load(f)
 
     # add predictions and labels to test_df
@@ -66,7 +67,7 @@ def main():
     # save results
     results["user_cold_start_analysis"] = accuracies
 
-    with open(f"results/{model_checkpoint}.json", "w") as f:
+    with open(f"results/{model_checkpoint}-{dataset_id}.json", "w") as f:
         json.dump(results, f, indent=4)
 
 

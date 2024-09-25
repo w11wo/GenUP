@@ -192,24 +192,40 @@ python src/trajectory_length_analysis.py \
 
 ## User Cold-start Analysis Results
 
-| User Groups | Model             |  NYC   |  TKY   |   CA   |
-| ----------- | ----------------- | :----: | :----: | :----: |
-| Inactive    | NL-Summ-Llama2-7b | 0.2042 | 0.1264 | 0.1247 |
-| Normal      | NL-Summ-Llama2-7b | 0.2720 | 0.1413 | 0.0967 |
-| Very Active | NL-Summ-Llama2-7b | 0.2702 | 0.2018 | 0.1137 |
+| User Groups | Model               |  NYC   |  TKY   |   CA   |
+| ----------- | ------------------- | :----: | :----: | :----: |
+| Inactive    | NL-Summ-Llama2-7b   | 0.2042 | 0.1264 | 0.1247 |
+| Normal      | NL-Summ-Llama2-7b   | 0.2720 | 0.1413 | 0.0967 |
+| Very Active | NL-Summ-Llama2-7b   | 0.2702 | 0.2018 | 0.1137 |
+| Inactive    | NL-Summ-Llama3.1-8b | 0.1826 | 0.1486 | 0.1380 |
+| Normal      | NL-Summ-Llama3.1-8b | 0.2554 | 0.1695 | 0.1338 |
+| Very Active | NL-Summ-Llama3.1-8b | 0.2884 | 0.2688 | 0.1324 |
 
 ## Trajectory Length Analysis Results
 
-| Trajectory Length | Model             |  NYC   |  TKY   |   CA   |
-| ----------------- | ----------------- | :----: | :----: | :----: |
-| Short             | NL-Summ-Llama2-7b | 0.1963 | 0.1117 | 0.0640 |
-| Middle            | NL-Summ-Llama2-7b | 0.2684 | 0.1590 | 0.1190 |
-| Long              | NL-Summ-Llama2-7b | 0.3117 | 0.2297 | 0.1666 |
+| Trajectory Length | Model               |  NYC   |  TKY   |   CA   |
+| ----------------- | ------------------- | :----: | :----: | :----: |
+| Short             | NL-Summ-Llama2-7b   | 0.1963 | 0.1117 | 0.0640 |
+| Middle            | NL-Summ-Llama2-7b   | 0.2684 | 0.1590 | 0.1190 |
+| Long              | NL-Summ-Llama2-7b   | 0.3117 | 0.2297 | 0.1666 |
+| Short             | NL-Summ-Llama3.1-8b | 0.2146 | 0.1717 | 0.1070 |
+| Middle            | NL-Summ-Llama3.1-8b | 0.2529 | 0.2014 | 0.1367 |
+| Long              | NL-Summ-Llama3.1-8b | 0.3064 | 0.2636 | 0.1637 |
 
 ## Generalization to Other Datasets
+
+### NL-Summ-Llama2-7b
 
 | Trained on |  NYC   |  TKY   |   CA   |
 | ---------: | :----: | :----: | :----: |
 |        NYC | 0.2554 | 0.1438 | 0.0920 |
 |        TKY | 0.2484 | 0.1671 | 0.0996 |
 |         CA | 0.2281 | 0.1446 | 0.1130 |
+
+### NL-Summ-Llama3.1-8b
+
+| Trained on |  NYC   |  TKY   |   CA   |
+| ---------: | :----: | :----: | :----: |
+|        NYC | 0.2127 | 0.1179 | 0.0787 |
+|        TKY | 0.1924 | 0.2582 | 0.0848 |
+|         CA | 0.1987 | 0.1197 | 0.1339 |
