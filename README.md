@@ -123,6 +123,24 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --dataset_id "w11wo/FourSquare-CA-POI"
 ```
 
+#### Example: Llama-3.1-8B on FourSquare-TKY-POI
+
+Train the model using QLoRA and FSDP on Llama-3.1-8B with the FourSquare-TKY-POI dataset. Runs on 2 x H100 GPUs.
+
+```sh
+ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node=2 src/train_sft_qlora_fsdp.py \
+    --model_checkpoint "meta-llama/Meta-Llama-3.1-8B" \
+    --max_length 16384 \
+    --batch_size 2 \
+    --learning_rate 2e-4 \
+    --max_grad_norm 1.0 \
+    --warmup_steps 20 \
+    --num_epochs 3 \
+    --gradient_checkpointing \
+    --apply_liger_kernel_to_llama \
+    --dataset_id "w11wo/FourSquare-TKY-POI"
+```
+
 ## Evaluation & Analyses
 
 ### Next POI Evaluation
@@ -167,7 +185,7 @@ python src/trajectory_length_analysis.py \
 | Model               | History | Others |  NYC   |  TKY   |   CA   |
 | ------------------- | :-----: | :----: | :----: | :----: | :----: |
 | NL-Summ-Llama2-7b   |    ×    |   ×    | 0.2554 | 0.1671 | 0.1130 |
-| NL-Summ-Llama3.1-8b |    ×    |   ×    | 0.2582 |        | 0.1339 |
+| NL-Summ-Llama3.1-8b |    ×    |   ×    | 0.2582 | 0.2127 | 0.1339 |
 | LLM4POI*            |    ×    |   ×    | 0.2356 | 0.1517 | 0.1016 |
 | LLM4POI**           |    ✓    |   ×    | 0.3171 | 0.2836 | 0.1683 |
 | LLM4POI**           |    ✓    |   ✓    | 0.3372 | 0.3035 | 0.2065 |
