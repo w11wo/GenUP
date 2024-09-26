@@ -15,7 +15,6 @@ export HF_HOME=/srv/scratch/CRUISE/Wilson/.cache/huggingface
 export HF_HUB_ENABLE_HF_TRANSFER=1
 export MAMBA_EXE='/import/glass/1/z5601796/.local/bin/micromamba';
 export MAMBA_ROOT_PREFIX='/srv/scratch/CRUISE/Wilson/micromamba';
-export PYTHON_EXEC="$MAMBA_EXE run -n base python";
 export PIP_EXEC="$MAMBA_EXE run -n base pip";
 export ACCELERATE_EXEC="$MAMBA_EXE run -n base accelerate";
 

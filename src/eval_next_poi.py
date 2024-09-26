@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, GenerationConfig
 from peft import PeftConfig, PeftModel
-from liger_kernel.transformers import apply_liger_kernel_to_llama
+from liger_kernel.transformers import apply_liger_kernel_to_llama, apply_liger_kernel_to_qwen2
 
 
 def parse_args():
@@ -17,6 +17,7 @@ def parse_args():
     parser.add_argument("--model_checkpoint", type=str, required=True)
     parser.add_argument("--dataset_id", type=str, required=True)
     parser.add_argument("--apply_liger_kernel_to_llama", action="store_true")
+    parser.add_argument("--apply_liger_kernel_to_qwen2", action="store_true")
     parser.add_argument("--use_quantization", action="store_true")
     parser.add_argument("--temperature", type=float, default=0.6)
     parser.add_argument("--top_k", type=int, default=40)
@@ -63,6 +64,9 @@ def main():
 
     if args.apply_liger_kernel_to_llama:
         apply_liger_kernel_to_llama()
+
+    if args.apply_liger_kernel_to_qwen2:
+        apply_liger_kernel_to_qwen2()
 
     model = PeftModel.from_pretrained(model, args.model_checkpoint)
     model.eval()

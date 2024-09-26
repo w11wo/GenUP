@@ -1,5 +1,6 @@
 import re
 import json
+import math
 
 import torch
 from argparse import ArgumentParser
@@ -7,7 +8,7 @@ from tqdm.auto import tqdm
 from accelerate import Accelerator
 from sklearn.metrics import accuracy_score
 from datasets import load_dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, GenerationConfig
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, GenerationConfig, AutoConfig
 from peft import PeftConfig, PeftModel
 from liger_kernel.transformers import apply_liger_kernel_to_llama
 
@@ -16,6 +17,7 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument("--model_checkpoint", type=str, required=True)
     parser.add_argument("--dataset_id", type=str, required=True)
+    parser.add_argument("--context_size", type=int, default=16384)
     parser.add_argument("--apply_liger_kernel_to_llama", action="store_true")
     return parser.parse_args()
 
@@ -30,7 +32,7 @@ def main():
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
     # NOTE: we've formatted the prompt to include the <s> token at the beginning of the prompt
-    if tokenizer.add_bos_token:
+    if hasattr(tokenizer, "add_bos_token") and tokenizer.add_bos_token:
         tokenizer.add_bos_token = False
 
     torch_dtype = torch.float16
@@ -47,11 +49,18 @@ def main():
 
     peft_config = PeftConfig.from_pretrained(args.model_checkpoint)
 
+    config = AutoConfig.from_pretrained(peft_config.base_model_name_or_path)
+    orig_ctx_len = getattr(config, "max_position_embeddings", None)
+    # if orig_ctx_len and args.context_size > orig_ctx_len:
+    #     scaling_factor = float(math.ceil(args.context_size / orig_ctx_len))
+    #     config.rope_scaling = {"type": "linear", "factor": scaling_factor}
+
     model = AutoModelForCausalLM.from_pretrained(
         peft_config.base_model_name_or_path,
+        config=config,
         attn_implementation="sdpa",  # alternatively use "flash_attention_2"
         torch_dtype=torch_dtype,
-        quantization_config=quantization_config,
+        # quantization_config=quantization_config,
         device_map={"": device_index},
     )
 
@@ -62,7 +71,7 @@ def main():
     model.eval()
 
     cot_generation_config = GenerationConfig(
-        max_new_tokens=600,
+        max_new_tokens=800,
         min_new_tokens=None,
         do_sample=True,
         use_cache=True,
@@ -111,10 +120,13 @@ def main():
 
         cot_output = tokenizer.decode(outputs[0], skip_special_tokens=True)
         # get content inside <think> tags
-        cot_output = re.findall(r"<think>(.*?)</think>", cot_output, re.DOTALL)[0]
+        try:
+            cot_output = re.findall(r"<think>(.*?)</think>", cot_output, re.DOTALL | re.IGNORECASE)[0].strip()
+        except IndexError:
+            print(f"Error: {cot_output}")
+            cot_output = ""
 
         prompt = prompt + cot_output + "</think>" + "<output>" + output_prompt
-
         prompt_input_ids = tokenizer(prompt, return_tensors="pt").to(model.device)
         prompt_token_length = prompt_input_ids.input_ids.shape[1]
 
@@ -123,7 +135,6 @@ def main():
 
         prediction = tokenizer.decode(outputs[0, prompt_token_length:], skip_special_tokens=True)
         prediction = re.sub(r"[^0-9]", "", prediction)  # remove non-numeric tokens
-
         predictions.append(prediction)
         targets.append(target)
 

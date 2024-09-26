@@ -6,7 +6,7 @@ from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, TrainingArguments
 from peft import LoraConfig
 from trl import SFTTrainer, DataCollatorForCompletionOnlyLM
-from liger_kernel.transformers import apply_liger_kernel_to_llama
+from liger_kernel.transformers import apply_liger_kernel_to_llama, apply_liger_kernel_to_qwen2
 
 """
 Usage:
@@ -36,6 +36,7 @@ def parse_args():
     parser.add_argument("--num_epochs", type=int, default=3)
     parser.add_argument("--gradient_checkpointing", action="store_true")
     parser.add_argument("--apply_liger_kernel_to_llama", action="store_true")
+    parser.add_argument("--apply_liger_kernel_to_qwen2", action="store_true")
     parser.add_argument("--resume_from_checkpoint", action="store_true")
     parser.add_argument("--dataset_id", type=str, required=True)
     return parser.parse_args()
@@ -56,7 +57,7 @@ def main():
     if hasattr(tokenizer, "add_bos_token") and tokenizer.add_bos_token:
         tokenizer.add_bos_token = False
 
-    response_template = " [/INST]" if "Llama-3" in model_id else "[/INST]"
+    response_template = "[/INST]" if "llama-2" in model_id.lower() else " [/INST]"
     collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
     max_seq_length = args.max_length
 
@@ -83,6 +84,9 @@ def main():
 
     if args.apply_liger_kernel_to_llama:
         apply_liger_kernel_to_llama()
+
+    if args.apply_liger_kernel_to_qwen2:
+        apply_liger_kernel_to_qwen2()
 
     peft_config = LoraConfig(
         r=8,
