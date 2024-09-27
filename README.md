@@ -267,6 +267,9 @@ python src/trajectory_length_analysis.py \
 | Inactive    | NL-Summ-Llama3.1-8b | 0.1826 | 0.1486 | 0.1380 |
 | Normal      | NL-Summ-Llama3.1-8b | 0.2554 | 0.1695 | 0.1338 |
 | Very Active | NL-Summ-Llama3.1-8b | 0.2884 | 0.2688 | 0.1324 |
+| Inactive    | NL-Summ-Llama3.2-1b | 0.1764 | 0.1306 | 0.1316 |
+| Normal      | NL-Summ-Llama3.2-1b | 0.2664 | 0.1494 | 0.1223 |
+| Very Active | NL-Summ-Llama3.2-1b | 0.2704 | 0.2321 | 0.1263 |
 
 ## Trajectory Length Analysis Results
 
@@ -278,6 +281,9 @@ python src/trajectory_length_analysis.py \
 | Short             | NL-Summ-Llama3.1-8b | 0.2146 | 0.1717 | 0.1070 |
 | Middle            | NL-Summ-Llama3.1-8b | 0.2529 | 0.2014 | 0.1367 |
 | Long              | NL-Summ-Llama3.1-8b | 0.3064 | 0.2636 | 0.1637 |
+| Short             | NL-Summ-Llama3.2-1b | 0.1830 | 0.1423 | 0.1011 |
+| Middle            | NL-Summ-Llama3.2-1b | 0.2529 | 0.1730 | 0.1385 |
+| Long              | NL-Summ-Llama3.2-1b | 0.3152 | 0.2384 | 0.1500 |
 
 ## Generalization to Other Datasets
 
@@ -296,3 +302,11 @@ python src/trajectory_length_analysis.py \
 |        NYC | 0.2127 | 0.1179 | 0.0787 |
 |        TKY | 0.1924 | 0.2582 | 0.0848 |
 |         CA | 0.1987 | 0.1197 | 0.1339 |
+
+### NL-Summ-Llama3.2-1b
+
+| Trained on |  NYC   |  TKY   |   CA   |
+| ---------: | :----: | :----: | :----: |
+|        NYC | 0.2484 | 0.1197 | 0.0787 |
+|        TKY | 0.1973 | 0.1851 | 0.0769 |
+|         CA | 0.2253 | 0.1236 | 0.1267 |
