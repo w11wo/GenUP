@@ -12,7 +12,7 @@ git clone https://huggingface.co/datasets/w11wo/LLM4POI
 
 ```sh
 python src/generate_user_profile.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-User-Profiles
-python src/generate_user_profile.py --dataset ca --dataset_id w11wo/FourSquare-CA-User-Profiles
+python src/generate_user_profile.py --dataset ca --dataset_id w11wo/Gowalla-CA-User-Profiles
 python src/generate_user_profile.py --dataset tky --dataset_id w11wo/FourSquare-TKY-User-Profiles
 ```
 
@@ -26,7 +26,7 @@ python src/generate_poi_reasoning.py --dataset_id w11wo/FourSquare-NYC-POI --dat
 
 ```sh
 python src/create_sft_dataset.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-POI
-python src/create_sft_dataset.py --dataset ca --dataset_id w11wo/FourSquare-CA-POI
+python src/create_sft_dataset.py --dataset ca --dataset_id w11wo/Gowalla-CA-POI
 python src/create_sft_dataset.py --dataset tky --dataset_id w11wo/FourSquare-TKY-POI
 python src/create_sft_dataset.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-POI-CoT --use_cot
 ```
@@ -51,9 +51,9 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --dataset_id "w11wo/FourSquare-NYC-POI"
 ```
 
-#### Example: Llama-2-7B-LongLoRA-32k on FourSquare-CA-POI
+#### Example: Llama-2-7B-LongLoRA-32k on Gowalla-CA-POI
 
-Train the model using QLoRA and FSDP on Llama-2-7B-LongLoRA-32k with the FourSquare-CA-POI dataset. Runs on 2 x V100 GPUs.
+Train the model using QLoRA and FSDP on Llama-2-7B-LongLoRA-32k with the Gowalla-CA-POI dataset. Runs on 2 x V100 GPUs.
 
 ```sh
 ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node=2 src/train_sft_qlora_fsdp.py \
@@ -66,7 +66,7 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --num_epochs 3 \
     --gradient_checkpointing \
     --apply_liger_kernel_to_llama \
-    --dataset_id "w11wo/FourSquare-CA-POI"
+    --dataset_id "w11wo/Gowalla-CA-POI"
 ```
 
 #### Example: Llama-2-7B-LongLoRA-32k on FourSquare-TKY-POI
@@ -105,9 +105,9 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --dataset_id "w11wo/FourSquare-NYC-POI"
 ```
 
-#### Example: Llama-3.1-8B on FourSquare-CA-POI
+#### Example: Llama-3.1-8B on Gowalla-CA-POI
 
-Train the model using QLoRA and FSDP on Llama-3.1-8B with the FourSquare-CA-POI dataset. Runs on 2 x H100 GPUs.
+Train the model using QLoRA and FSDP on Llama-3.1-8B with the Gowalla-CA-POI dataset. Runs on 2 x H100 GPUs.
 
 ```sh
 ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node=2 src/train_sft_qlora_fsdp.py \
@@ -120,7 +120,7 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --num_epochs 3 \
     --gradient_checkpointing \
     --apply_liger_kernel_to_llama \
-    --dataset_id "w11wo/FourSquare-CA-POI"
+    --dataset_id "w11wo/Gowalla-CA-POI"
 ```
 
 #### Example: Llama-3.1-8B on FourSquare-TKY-POI

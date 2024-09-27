@@ -1,5 +1,5 @@
 {
-    "model_id": "Meta-Llama-3.1-8B-FourSquare-CA-POI",
+    "model_id": "Meta-Llama-3.1-8B-Gowalla-CA-POI",
     "dataset_id": "FourSquare-NYC-POI",
     "accuracy": 0.198740377886634,
     "predictions": [

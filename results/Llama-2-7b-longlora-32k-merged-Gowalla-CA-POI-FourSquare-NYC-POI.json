@@ -1,5 +1,5 @@
 {
-    "model_id": "Llama-2-7b-longlora-32k-merged-FourSquare-CA-POI",
+    "model_id": "Llama-2-7b-longlora-32k-merged-Gowalla-CA-POI",
     "dataset_id": "FourSquare-NYC-POI",
     "accuracy": 0.22813156053184044,
     "predictions": [
