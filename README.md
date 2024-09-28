@@ -373,31 +373,31 @@ python src/trajectory_length_analysis.py \
 
 ## User Cold-start Analysis Results
 
-| User Groups | Model               |  NYC   |  TKY   |   CA   |
-| ----------- | ------------------- | :----: | :----: | :----: |
-| Inactive    | NL-Summ-Llama2-7b   | 0.2042 | 0.1264 | 0.1247 |
-| Normal      | NL-Summ-Llama2-7b   | 0.2720 | 0.1413 | 0.0967 |
-| Very Active | NL-Summ-Llama2-7b   | 0.2702 | 0.2018 | 0.1137 |
-| Inactive    | NL-Summ-Llama3.1-8b | 0.1826 | 0.1486 | 0.1380 |
-| Normal      | NL-Summ-Llama3.1-8b | 0.2554 | 0.1695 | 0.1338 |
-| Very Active | NL-Summ-Llama3.1-8b | 0.2884 | 0.2688 | 0.1324 |
-| Inactive    | NL-Summ-Llama3.2-1b | 0.1764 | 0.1306 | 0.1316 |
-| Normal      | NL-Summ-Llama3.2-1b | 0.2664 | 0.1494 | 0.1223 |
-| Very Active | NL-Summ-Llama3.2-1b | 0.2704 | 0.2321 | 0.1263 |
+| User Groups | Model               |  NYC   |  TKY   |   CA   | Moscow | Sao Paulo |
+| ----------- | ------------------- | :----: | :----: | :----: | :----: | :-------: |
+| Inactive    | NL-Summ-Llama2-7b   | 0.2042 | 0.1264 | 0.1247 | 0.1227 |  0.1366   |
+| Normal      | NL-Summ-Llama2-7b   | 0.2720 | 0.1413 | 0.0967 | 0.1410 |  0.1504   |
+| Very Active | NL-Summ-Llama2-7b   | 0.2702 | 0.2018 | 0.1137 | 0.1748 |  0.1940   |
+| Inactive    | NL-Summ-Llama3.1-8b | 0.1826 | 0.1486 | 0.1380 | 0.1064 |  0.1239   |
+| Normal      | NL-Summ-Llama3.1-8b | 0.2554 | 0.1695 | 0.1338 | 0.1356 |  0.1437   |
+| Very Active | NL-Summ-Llama3.1-8b | 0.2884 | 0.2688 | 0.1324 | 0.1683 |  0.1820   |
+| Inactive    | NL-Summ-Llama3.2-1b | 0.1764 | 0.1306 | 0.1316 | 0.1064 |  0.1212   |
+| Normal      | NL-Summ-Llama3.2-1b | 0.2664 | 0.1494 | 0.1223 | 0.1285 |  0.1344   |
+| Very Active | NL-Summ-Llama3.2-1b | 0.2704 | 0.2321 | 0.1263 | 0.1647 |  0.1740   |
 
 ## Trajectory Length Analysis Results
 
-| Trajectory Length | Model               |  NYC   |  TKY   |   CA   |
-| ----------------- | ------------------- | :----: | :----: | :----: |
-| Short             | NL-Summ-Llama2-7b   | 0.1963 | 0.1117 | 0.0640 |
-| Middle            | NL-Summ-Llama2-7b   | 0.2684 | 0.1590 | 0.1190 |
-| Long              | NL-Summ-Llama2-7b   | 0.3117 | 0.2297 | 0.1666 |
-| Short             | NL-Summ-Llama3.1-8b | 0.2146 | 0.1717 | 0.1070 |
-| Middle            | NL-Summ-Llama3.1-8b | 0.2529 | 0.2014 | 0.1367 |
-| Long              | NL-Summ-Llama3.1-8b | 0.3064 | 0.2636 | 0.1637 |
-| Short             | NL-Summ-Llama3.2-1b | 0.1830 | 0.1423 | 0.1011 |
-| Middle            | NL-Summ-Llama3.2-1b | 0.2529 | 0.1730 | 0.1385 |
-| Long              | NL-Summ-Llama3.2-1b | 0.3152 | 0.2384 | 0.1500 |
+| Trajectory Length | Model               |  NYC   |  TKY   |   CA   | Moscow | Sao Paulo |
+| ----------------- | ------------------- | :----: | :----: | :----: | :----: | :-------: |
+| Short             | NL-Summ-Llama2-7b   | 0.1963 | 0.1117 | 0.0640 | 0.0646 |  0.0706   |
+| Middle            | NL-Summ-Llama2-7b   | 0.2684 | 0.1590 | 0.1190 | 0.1873 |  0.1985   |
+| Long              | NL-Summ-Llama2-7b   | 0.3117 | 0.2297 | 0.1666 | 0.2494 |  0.2739   |
+| Short             | NL-Summ-Llama3.1-8b | 0.2146 | 0.1717 | 0.1070 | 0.0662 |  0.0686   |
+| Middle            | NL-Summ-Llama3.1-8b | 0.2529 | 0.2014 | 0.1367 | 0.1784 |  0.1848   |
+| Long              | NL-Summ-Llama3.1-8b | 0.3064 | 0.2636 | 0.1637 | 0.2324 |  0.2551   |
+| Short             | NL-Summ-Llama3.2-1b | 0.1830 | 0.1423 | 0.1011 | 0.0637 |  0.0651   |
+| Middle            | NL-Summ-Llama3.2-1b | 0.2529 | 0.1730 | 0.1385 | 0.1729 |  0.1696   |
+| Long              | NL-Summ-Llama3.2-1b | 0.3152 | 0.2384 | 0.1500 | 0.2275 |  0.2461   |
 
 ## Generalization to Other Datasets
 
