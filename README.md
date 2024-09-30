@@ -399,9 +399,9 @@ python src/trajectory_length_analysis.py \
 
 | User Groups | Model               |  NYC   |  TKY   |   CA   | Moscow | Sao Paulo |
 | ----------- | ------------------- | :----: | :----: | :----: | :----: | :-------: |
-| Inactive    | NL-Summ-Llama2-7b   | 0.2042 | 0.1264 | 0.1247 | 0.1227 |  0.1366   |
-| Normal      | NL-Summ-Llama2-7b   | 0.2720 | 0.1413 | 0.0967 | 0.1410 |  0.1504   |
-| Very Active | NL-Summ-Llama2-7b   | 0.2702 | 0.2018 | 0.1137 | 0.1748 |  0.1940   |
+| Inactive    | NL-Summ-Llama2-7b   | 0.2105 | 0.1306 | 0.1091 | 0.1227 |  0.1366   |
+| Normal      | NL-Summ-Llama2-7b   | 0.2591 | 0.1394 | 0.1089 | 0.1410 |  0.1504   |
+| Very Active | NL-Summ-Llama2-7b   | 0.2752 | 0.2063 | 0.1096 | 0.1748 |  0.1940   |
 | Inactive    | NL-Summ-Llama3.1-8b | 0.1826 | 0.1486 | 0.1380 | 0.1180 |  0.1393   |
 | Normal      | NL-Summ-Llama3.1-8b | 0.2554 | 0.1695 | 0.1338 | 0.1464 |  0.1598   |
 | Very Active | NL-Summ-Llama3.1-8b | 0.2884 | 0.2688 | 0.1324 | 0.1808 |  0.1944   |
@@ -413,9 +413,9 @@ python src/trajectory_length_analysis.py \
 
 | Trajectory Length | Model               |  NYC   |  TKY   |   CA   | Moscow | Sao Paulo |
 | ----------------- | ------------------- | :----: | :----: | :----: | :----: | :-------: |
-| Short             | NL-Summ-Llama2-7b   | 0.1963 | 0.1117 | 0.0640 | 0.0646 |  0.0706   |
-| Middle            | NL-Summ-Llama2-7b   | 0.2684 | 0.1590 | 0.1190 | 0.1873 |  0.1985   |
-| Long              | NL-Summ-Llama2-7b   | 0.3117 | 0.2297 | 0.1666 | 0.2494 |  0.2739   |
+| Short             | NL-Summ-Llama2-7b   | 0.1980 | 0.1138 | 0.0649 | 0.0646 |  0.0706   |
+| Middle            | NL-Summ-Llama2-7b   | 0.2801 | 0.1693 | 0.1154 | 0.1873 |  0.1985   |
+| Long              | NL-Summ-Llama2-7b   | 0.3099 | 0.2264 | 0.1578 | 0.2494 |  0.2739   |
 | Short             | NL-Summ-Llama3.1-8b | 0.2146 | 0.1717 | 0.1070 | 0.0744 |  0.0759   |
 | Middle            | NL-Summ-Llama3.1-8b | 0.2529 | 0.2014 | 0.1367 | 0.1899 |  0.2009   |
 | Long              | NL-Summ-Llama3.1-8b | 0.3064 | 0.2636 | 0.1637 | 0.2490 |  0.2745   |
@@ -429,9 +429,9 @@ python src/trajectory_length_analysis.py \
 
 | Trained on |  NYC   |  TKY   |   CA   |
 | ---------: | :----: | :----: | :----: |
-|        NYC | 0.2554 | 0.1438 | 0.0920 |
-|        TKY | 0.2484 | 0.1671 | 0.0996 |
-|         CA | 0.2281 | 0.1446 | 0.1130 |
+|        NYC | 0.2575 | 0.1438 | 0.0920 |
+|        TKY | 0.2484 | 0.1699 | 0.0996 |
+|         CA | 0.2281 | 0.1446 | 0.1094 |
 
 ### NL-Summ-Llama3.1-8b
 
