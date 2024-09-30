@@ -388,7 +388,7 @@ python src/trajectory_length_analysis.py \
 
 | Model               | History | Others |  NYC   |  TKY   |   CA   | Moscow | Sao Paulo |
 | ------------------- | :-----: | :----: | :----: | :----: | :----: | :----: | :-------: |
-| NL-Summ-Llama2-7b   |    ×    |   ×    | 0.2554 | 0.1671 | 0.1130 | 0.1590 |  0.1756   |
+| NL-Summ-Llama2-7b   |    ×    |   ×    | 0.2575 | 0.1699 | 0.1094 | 0.1590 |  0.1756   |
 | NL-Summ-Llama3.1-8b |    ×    |   ×    | 0.2582 | 0.2127 | 0.1339 | 0.1635 |  0.1785   |
 | NL-Summ-Llama3.2-1b |    ×    |   ×    | 0.2484 | 0.1851 | 0.1267 | 0.1610 |  0.1750   |
 | LLM4POI*            |    ×    |   ×    | 0.2356 | 0.1517 | 0.1016 | 0.1461 |  0.1668   |
@@ -448,3 +448,14 @@ python src/trajectory_length_analysis.py \
 |        NYC | 0.2484 | 0.1197 | 0.0787 |
 |        TKY | 0.1973 | 0.1851 | 0.0769 |
 |         CA | 0.2253 | 0.1236 | 0.1267 |
+
+## Ablation Study
+
+### User Profile Components
+
+| Components                                                 | Model             |  NYC   |
+| ---------------------------------------------------------- | ----------------- | :----: |
+| Profile                                                    | NL-Summ-Llama2-7b | 0.2568 |
+| Profile + Routines & Preferences                           | NL-Summ-Llama2-7b | 0.2568 |
+| Profile + Routines & Preferences + Attributes              | NL-Summ-Llama2-7b | 0.2575 |
+| Profile + Routines & Preferences + Attributes + BFI Traits | NL-Summ-Llama2-7b | 0.2575 |
