@@ -21,7 +21,7 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
     --num_epochs 3 \
     --gradient_checkpointing \
     --apply_liger_kernel_to_llama \
-    --dataset_id "w11wo/FourSquare-NYC-POI"
+    --dataset_id "FourSquare-NYC-POI"
 """
 
 

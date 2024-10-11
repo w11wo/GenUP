@@ -4,9 +4,9 @@ for dataset in "FourSquare-NYC-POI" "Gowalla-CA-POI" "FourSquare-TKY-POI" "FourS
 do
     python src/user_cold_start_analysis.py \
         --model_checkpoint $base_model-$dataset \
-        --dataset_id w11wo/$dataset
+        --dataset_id $dataset
     
     python src/trajectory_length_analysis.py \
         --model_checkpoint $base_model-$dataset \
-        --dataset_id w11wo/$dataset
+        --dataset_id $dataset
 done

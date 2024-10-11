@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #$ -j y
-#$ -P CRUISE
 #$ -e logs/$JOB_ID_$JOB_NAME.err
 #$ -o logs/$JOB_ID_$JOB_NAME.out
 #$ -l walltime=20:00:00
@@ -11,15 +10,14 @@
 #$ -l ngpus=2
 #$ -l gpu_model=H100_NVL
 
-export HF_HOME=/srv/scratch/CRUISE/Wilson/.cache/huggingface
 export HF_HUB_ENABLE_HF_TRANSFER=1
-export MAMBA_EXE='/import/glass/1/z5601796/.local/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/srv/scratch/CRUISE/Wilson/micromamba';
+export MAMBA_EXE='.local/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/srv/scratch/micromamba';
 export PIP_EXEC="$MAMBA_EXE run -n base pip";
 export ACCELERATE_EXEC="$MAMBA_EXE run -n base accelerate";
 export TORCHRUN_EXEC="$MAMBA_EXE run -n base torchrun";
 
-dir=/import/glass/1/z5601796/Wilson/NL-Summ-LLM
+dir=NL-Summ-LLM
 
 nvidia-smi
 
@@ -37,4 +35,4 @@ HF_HUB_OFFLINE=1 ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 $TORCHRU
     --num_epochs 3 \
     --gradient_checkpointing \
     --apply_liger_kernel_to_llama \
-    --dataset_id "w11wo/FourSquare-TKY-POI"
+    --dataset_id "FourSquare-TKY-POI"
