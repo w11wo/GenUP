@@ -1,14 +1,51 @@
 # GenUP: Generative User Profilers as In-Context Learners for Next POI Recommender Systems
 
-## Usage
+<div align="center">
 
-### Download Raw Dataset
+### [Wilson Wongso](https://wilsonwongso.dev)<sup>1,2</sup>, [Hao Xue](https://www.unsw.edu.au/staff/hao-xue)<sup>1,2</sup>, and [Flora Salim](https://fsalim.github.io/)<sup>1,2</sup>
 
-```sh
-git clone https://huggingface.co/datasets/w11wo/LLM4POI
-```
+<sup>1</sup> School of Computer Science and Engineering, University of New South Wales, Sydney, Australia<br/>
+<sup>2</sup> ARC Centre of Excellence for Automated Decision Making + Society
+
+[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97-Hugging_Face_Collections-yellow)](https://huggingface.co/collections/w11wo/genup-66d7e794169f9a7cb88c3f60)
+[![arXiv](https://img.shields.io/badge/arXiv-2410.20643-b31b1b.svg)](https://arxiv.org/abs/2410.20643)
+[![python](https://img.shields.io/badge/-Python_3.10-blue?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3100/)
+[![pytorch](https://img.shields.io/badge/PyTorch_2.4.0+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
+
+</div>
+
+## Overview
+
+![GenUP](assets/genup-pipeline.jpg)
+
+## Download Datasets
+
+### LLM4POI Datasets
+
+We followed the dataset preparation of [LLM4POI](https://github.com/neolifer/LLM4POI) for the FourSquare-NYC, Gowalla-CA, and FourSquare-TKY datasets. We also provide the processed datasets on [Hugging Face](https://huggingface.co/datasets/w11wo/LLM4POI) Please refer to their repository for more details.
+
+> ❗️ Moscow and Sao Paulo preprocessing steps will be made available soon.
+
+### Processed Datasets
+
+We provide the processed, Q&A version of LLM4POI, Moscow and Sao Paulo datasets:
+
+| Dataset             | Link                                                                          |
+| ------------------- | ----------------------------------------------------------------------------- |
+| FourSquare-NYC      | [Hugging Face](https://huggingface.co/datasets/w11wo/FourSquare-NYC-POI)      |
+| Gowalla-CA          | [Hugging Face](https://huggingface.co/datasets/w11wo/Gowalla-CA-POI)          |
+| FourSquare-TKY      | [Hugging Face](https://huggingface.co/datasets/w11wo/FourSquare-TKY-POI)      |
+| FourSquare-Moscow   | [Hugging Face](https://huggingface.co/datasets/w11wo/FourSquare-Moscow-POI)   |
+| FourSquare-SaoPaulo | [Hugging Face](https://huggingface.co/datasets/w11wo/FourSquare-SaoPaulo-POI) |
+
+
+## (Optional) Prepare Datasets
 
 ### Generate User Profiles
+
+To generate the user profiles from the check-in records, run the following commands:
+
+> ⚠️ Make sure to replace `w11wo` with your Hugging Face username.
 
 ```sh
 python src/generate_user_profile.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-User-Profiles
@@ -18,13 +55,17 @@ python src/generate_user_profile.py --dataset tky --dataset_id w11wo/FourSquare-
 
 ### Create SFT Dataset
 
+And to create the SFT dataset using the user profiles and the POI data, run the following commands:
+
 ```sh
 python src/create_sft_dataset.py --dataset nyc --dataset_id w11wo/FourSquare-NYC-POI
 python src/create_sft_dataset.py --dataset ca --dataset_id w11wo/Gowalla-CA-POI
 python src/create_sft_dataset.py --dataset tky --dataset_id w11wo/FourSquare-TKY-POI
 ```
 
-### SFT Training with QLoRA and FSDP
+## Supervised Fine-tuning
+
+We provide the training scripts and recipes for the GenUP-Llama models demonstrated in our paper. In our setup, we used 2 H100 GPUs, QLoRA and FSDP for multi-GPU training, and the following hyperparameters:
 
 #### Llama-2-7B-LongLoRA-32k
 
@@ -302,9 +343,12 @@ ACCELERATE_USE_FSDP=1 FSDP_CPU_RAM_EFFICIENT_LOADING=1 torchrun --nproc_per_node
 ```
 </details>
 
-## Evaluation & Analyses
+## Next POI Evaluation
 
-### Next POI Evaluation
+To predict the next POI for a given trajectory, we used the fine-tuned models to generate the ID of the next POI. Different models and datasets require different generation parameters. The following commands show how to run the evaluation script for each model:
+
+<details>
+  <summary>Llama-2-7B-LongLoRA-32k on FourSquare-NYC-POI</summary>
 
 ```sh
 accelerate launch src/eval_next_poi.py \
@@ -312,6 +356,11 @@ accelerate launch src/eval_next_poi.py \
     --dataset_id "w11wo/FourSquare-NYC-POI" \
     --apply_liger_kernel_to_llama
 ```
+
+</details>
+
+<details>
+  <summary>Llama-3.1-8B on FourSquare-TKY-POI</summary>
 
 ```sh
 accelerate launch src/eval_next_poi.py \
@@ -325,6 +374,11 @@ accelerate launch src/eval_next_poi.py \
     --repetition_penalty 1.0
 ```
 
+</details>
+
+<details>
+  <summary>Llama-3.2-1B on FourSquare-TKY-POI</summary>
+
 ```sh
 accelerate launch src/eval_next_poi.py \
     --model_checkpoint "w11wo/Meta-Llama-3.2-1B-FourSquare-TKY-POI" \
@@ -336,6 +390,11 @@ accelerate launch src/eval_next_poi.py \
     --typical_p 0.95 \
     --repetition_penalty 1.0
 ```
+
+</details>
+
+<details>
+  <summary>Llama-3.1-8B on FourSquare-Moscow-POI</summary>
 
 ```sh
 accelerate launch src/eval_next_poi.py \
@@ -349,6 +408,11 @@ accelerate launch src/eval_next_poi.py \
     --repetition_penalty 1.0
 ```
 
+</details>
+
+<details>
+  <summary>Llama-3.2-1B on FourSquare-SaoPaulo-POI</summary>
+
 ```sh
 accelerate launch src/eval_next_poi.py \
     --model_checkpoint "w11wo/Meta-Llama-3.2-1B-FourSquare-SaoPaulo-POI" \
@@ -361,23 +425,9 @@ accelerate launch src/eval_next_poi.py \
     --repetition_penalty 1.0
 ```
 
-### User Cold-start Analysis
+</details>
 
-```sh
-python src/user_cold_start_analysis.py \
-    --model_checkpoint w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI \
-    --dataset_id w11wo/FourSquare-NYC-POI
-```
-
-### Trajectory Length Analysis
-
-```sh
-python src/trajectory_length_analysis.py \
-    --model_checkpoint w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI \
-    --dataset_id w11wo/FourSquare-NYC-POI
-```
-
-## POI Prediction Results
+### POI Prediction Results
 
 | Model                                           | History | Other Users |    NYC     |    TKY     |     CA     |
 | ----------------------------------------------- | :-----: | :---------: | :--------: | :--------: | :--------: |
@@ -404,7 +454,17 @@ python src/trajectory_length_analysis.py \
 | *LLM agents and with external knowledge* |
 | AgentMove                                | 0.160  |   0.230   |
 
-## User Cold-start Analysis Results
+## User Cold-start Analysis
+
+To analyze the performance of the models on different user groups (e.g. cold-start users), run the following command:
+
+```sh
+python src/user_cold_start_analysis.py \
+    --model_checkpoint w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI \
+    --dataset_id w11wo/FourSquare-NYC-POI
+```
+
+### Results
 
 | User Groups | Model             |  NYC   |  TKY   |   CA   | Moscow | Sao Paulo |
 | ----------- | ----------------- | :----: | :----: | :----: | :----: | :-------: |
@@ -418,7 +478,17 @@ python src/trajectory_length_analysis.py \
 | Normal      | GenUP-Llama3.2-1b | 0.2664 | 0.1494 | 0.1223 | 0.1390 |  0.1530   |
 | Very Active | GenUP-Llama3.2-1b | 0.2704 | 0.2321 | 0.1263 | 0.1793 |  0.1906   |
 
-## Trajectory Length Analysis Results
+## Trajectory Length Analysis
+
+And to analyze the performance of the models on different trajectory lengths, run the following command:
+
+```sh
+python src/trajectory_length_analysis.py \
+    --model_checkpoint w11wo/Llama-2-7b-longlora-32k-merged-FourSquare-NYC-POI \
+    --dataset_id w11wo/FourSquare-NYC-POI
+```
+
+### Results
 
 | Trajectory Length | Model             |  NYC   |  TKY   |   CA   | Moscow | Sao Paulo |
 | ----------------- | ----------------- | :----: | :----: | :----: | :----: | :-------: |
@@ -433,6 +503,8 @@ python src/trajectory_length_analysis.py \
 | Long              | GenUP-Llama3.2-1b | 0.3152 | 0.2384 | 0.1500 | 0.2459 |  0.2694   |
 
 ## Generalization to Other Datasets
+
+We also evaluate the generalization of our models trained on one dataset and used to infer the next POI for another dataset:
 
 ### GenUP-Llama2-7b
 
@@ -458,9 +530,9 @@ python src/trajectory_length_analysis.py \
 |        TKY | 0.1973 | 0.1851 | 0.0769 |
 |         CA | 0.2253 | 0.1236 | 0.1267 |
 
-## Ablation Study
+## Ablation Study: User Profile Components
 
-### User Profile Components
+Finally, we conduct an ablation study to analyze the impact of different components of the user profiles on the next POI prediction:
 
 | Components                                                 | Model           |  NYC   |
 | ---------------------------------------------------------- | --------------- | :----: |
@@ -468,3 +540,23 @@ python src/trajectory_length_analysis.py \
 | Profile + Routines & Preferences                           | GenUP-Llama2-7b | 0.2568 |
 | Profile + Routines & Preferences + Attributes              | GenUP-Llama2-7b | 0.2575 |
 | Profile + Routines & Preferences + Attributes + BFI Traits | GenUP-Llama2-7b | 0.2575 |
+
+## Citation
+
+If you find this repository useful for your research, please consider citing our paper:
+
+```bibtex
+@misc{wongso2024genupgenerativeuserprofilers,
+  title={GenUP: Generative User Profilers as In-Context Learners for Next POI Recommender Systems}, 
+  author={Wilson Wongso and Hao Xue and Flora D. Salim},
+  year={2024},
+  eprint={2410.20643},
+  archivePrefix={arXiv},
+  primaryClass={cs.IR},
+  url={https://arxiv.org/abs/2410.20643}, 
+}
+```
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact Wilson at `w.wongso(at)unsw(dot)edu(dot)au`.
